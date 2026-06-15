@@ -1,0 +1,151 @@
+{
+  "set_id": "2026-06-15-3d-printing",
+  "topic": "3D printing",
+  "created": "2026-06-15",
+  "masthead": {
+    "eyebrow": "TRIVIA FIELD GUIDE",
+    "title_html": "Reason Your Way <span class=\"num\">Through</span> 3D Printing",
+    "title_plain": "Reason Your Way Through 3D Printing",
+    "dek": "Ten questions across the world of 3D printing — the processes, the plastics, and the files. Narrow the field, place your bet, then tap to check yourself.",
+    "footer_html": "Ten questions · ten distinct dimensions (100% unique) · sources noted per question."
+  },
+  "plan": {
+    "dimensions": ["invention date", "material feedstock", "file-format ubiquity", "metal-part process", "heat tolerance", "patent-expiry history", "material flexibility", "file-format capability", "binding mechanism", "machine-instruction language"],
+    "archetypes": ["first", "distinctive-property", "standard-default", "mechanism", "extreme-high", "catalyst-event", "distinctive-property", "modern-replacement", "mechanism", "instruction-format"],
+    "unique_ratio": 1.0,
+    "doubled": [],
+    "topic_fit": "Marginal-but-workable: every answer is drawn from a small listable domain set — the process families, the common filaments, or the file formats — so questions are 'which member fits this filter,' not recall."
+  },
+  "questions": [
+    {
+      "id": "2026-06-15-3d-printing-01",
+      "cat": "Processes · Invention date",
+      "dimension": "invention date",
+      "archetype": "first",
+      "q": "Which kind of 3D printing came first? It was patented in the mid-1980s and builds a part by using a beam of light to harden liquid resin, one thin layer at a time.",
+      "answer_subject": "Stereolithography (SLA)",
+      "state": "Stereolithography (SLA)",
+      "detail": "Patented by Chuck Hull — filed in 1984, granted in 1986 — the first commercial 3D printing process.",
+      "why": "Hull also invented the STL file that nearly every printer still uses; his light-curing method beat the melted-plastic printers people usually picture by several years.",
+      "more": "Plastic-extrusion printing (FDM) wasn't patented until 1989. A French team filed a similar light-based idea just three weeks before Hull in 1984, but their backers abandoned it.",
+      "source": "Chuck Hull stereolithography patent (filed Aug 1984, granted Mar 1986); Wikipedia, 'Stereolithography.'"
+    },
+    {
+      "id": "2026-06-15-3d-printing-02",
+      "cat": "Materials · Feedstock",
+      "dimension": "material feedstock",
+      "archetype": "distinctive-property",
+      "q": "Which 3D printing plastic is made mostly from plants like corn, breaks down more easily than most plastics, and is the usual first material for beginners?",
+      "answer_subject": "PLA",
+      "state": "PLA (Polylactic Acid)",
+      "detail": "Prints at a low ~190–220°C and needs no heated chamber, which is why it's the beginner default.",
+      "why": "Unlike oil-based printing plastics, PLA comes from plant starch and will compost in an industrial facility — though not in a backyard bin.",
+      "more": "ABS, an oil-based plastic, was the early home standard but warps and smells; PETG sits between the two for everyday prints.",
+      "source": "Material guides for PLA (plant-derived, ~190–220°C print range)."
+    },
+    {
+      "id": "2026-06-15-3d-printing-03",
+      "cat": "Files · Standard format",
+      "dimension": "file-format ubiquity",
+      "archetype": "standard-default",
+      "q": "For decades, almost every model has been saved in one simple file type before printing. It stores only the shape, as a mesh of triangles — no color, size, or material. What is this long-standing standard file?",
+      "answer_subject": "STL",
+      "state": "STL",
+      "detail": "Introduced in 1987 by the first 3D printing company; the name comes from 'stereolithography.'",
+      "why": "It is still the most widely used 3D printing file, even though it carries nothing but a triangle mesh of the surface.",
+      "more": "Because it can't store color, units, or materials, newer formats were created to fix exactly those gaps.",
+      "source": "3D Systems STL format (introduced 1987); 3Dnatives, 'STL vs. 3MF.'"
+    },
+    {
+      "id": "2026-06-15-3d-printing-04",
+      "cat": "Processes · Metal parts",
+      "dimension": "metal-part process",
+      "archetype": "mechanism",
+      "q": "Which family of 3D printing makes strong metal parts — like jet-engine and rocket pieces — by spreading a thin layer of metal powder and melting it with a laser or electron beam?",
+      "answer_subject": "Powder Bed Fusion",
+      "state": "Powder Bed Fusion",
+      "detail": "Covers SLS (plastic powder) and the metal versions SLM, DMLS, and EBM.",
+      "why": "It builds dense metal parts good enough for aerospace — for example, fuel nozzles printed as a single piece instead of dozens.",
+      "more": "Directed Energy Deposition also melts metal, but it blows powder or feeds wire into the beam as it moves — better for repairs and very large parts than for fine detail.",
+      "source": "ISO/ASTM additive-manufacturing process families; Powder Bed Fusion (SLS/SLM/DMLS/EBM)."
+    },
+    {
+      "id": "2026-06-15-3d-printing-05",
+      "cat": "Materials · Heat tolerance",
+      "dimension": "heat tolerance",
+      "archetype": "extreme-high",
+      "q": "Most home printers can't handle it. Which high-performance plastic needs a nozzle near 400°C and a heated chamber, and is tough enough for aerospace parts and medical implants?",
+      "answer_subject": "PEEK",
+      "state": "PEEK",
+      "detail": "Melts around 343°C and is printed roughly 360–440°C, with a heated chamber near 120°C.",
+      "why": "Its printing temperature is well over 100°C hotter than everyday plastics — far beyond what a basic desktop printer can reach.",
+      "more": "The next-toughest common filaments, Polycarbonate (~270°C) and Nylon (~250°C), print more than 100°C cooler than PEEK.",
+      "source": "PEEK printing guides (melt ~343°C; nozzle ~360–440°C; chamber ~120°C)."
+    },
+    {
+      "id": "2026-06-15-3d-printing-06",
+      "cat": "History · Patent expiry",
+      "dimension": "patent-expiry history",
+      "archetype": "catalyst-event",
+      "q": "Cheap home 3D printers suddenly appeared around 2009, right after a key patent ran out. Which method — squeezing melted plastic through a moving nozzle — was finally opened up to everyone?",
+      "answer_subject": "Fused Deposition Modeling (FDM)",
+      "state": "Fused Deposition Modeling (FDM)",
+      "detail": "The core FDM patent expired in 2009, ending one company's hold on the melted-plastic method.",
+      "why": "The first hobbyist kit, the MakerBot Cupcake, went on sale that April for $750 — while a comparable professional machine cost $14,900.",
+      "more": "Prices for this kind of printer fell from over $10,000 to under $1,000, helped along by the open-source RepRap project started in 2005.",
+      "source": "AMFG and 3D Printing Industry on the 2009 FDM patent expiry; MakerBot Cupcake launch (April 2009, $750)."
+    },
+    {
+      "id": "2026-06-15-3d-printing-07",
+      "cat": "Materials · Flexibility",
+      "dimension": "material flexibility",
+      "archetype": "distinctive-property",
+      "q": "Which common 3D printing material is soft and rubbery instead of hard, so makers use it to print phone cases, gaskets, and watch straps that bend?",
+      "answer_subject": "TPU",
+      "state": "TPU (Thermoplastic Polyurethane)",
+      "detail": "A flexible, rubber-like filament, typically around 85–95A on the rubber-hardness scale.",
+      "why": "It stretches and springs back where rigid plastics like PLA or ABS would simply snap.",
+      "more": "It's trickier to print: the soft strand can buckle on its way into the nozzle, so it usually has to be printed slowly.",
+      "source": "Filament guides for TPU (flexible, Shore ~85–95A)."
+    },
+    {
+      "id": "2026-06-15-3d-printing-08",
+      "cat": "Files · Modern format",
+      "dimension": "file-format capability",
+      "archetype": "modern-replacement",
+      "q": "A newer printing file type, backed by several big tech companies, was built to fix the old standard's gaps. Unlike that older file, it can store color, materials, and several parts together. What is this modern format?",
+      "answer_subject": "3MF",
+      "state": "3MF (3D Manufacturing Format)",
+      "detail": "Released in 2015 by a consortium including Microsoft, Autodesk, HP, Siemens, and Stratasys.",
+      "why": "It was designed from scratch to carry full color, multiple materials, and many objects in one tidy file — everything the old triangle-only standard left out.",
+      "more": "An earlier replacement, AMF (2011), aimed at the same fixes but never caught on the way 3MF has.",
+      "source": "3MF Consortium (format released 2015); Prusa and 3Dnatives on 3MF vs. STL/AMF."
+    },
+    {
+      "id": "2026-06-15-3d-printing-09",
+      "cat": "Processes · No-heat binding",
+      "dimension": "binding mechanism",
+      "archetype": "mechanism",
+      "q": "Which 3D printing process never melts anything? It builds parts by spraying a liquid glue onto a bed of powder, layer by layer — handy for full-color models and for sand molds used in metal casting.",
+      "answer_subject": "Binder Jetting",
+      "state": "Binder Jetting",
+      "detail": "Loose powder plus a sprayed liquid binder; no heat is used while the part is being built.",
+      "why": "Because it can spray colored binder, it can print a full-color object in a single pass — and it makes cheap sand molds for foundries.",
+      "more": "Material Jetting also sprays tiny droplets, but it jets the actual build material (a resin) and cures it — not glue onto a separate powder.",
+      "source": "ISO/ASTM additive-manufacturing process families; Binder Jetting (powder + liquid binder, no heat)."
+    },
+    {
+      "id": "2026-06-15-3d-printing-10",
+      "cat": "Files · Machine language",
+      "dimension": "machine-instruction language",
+      "archetype": "instruction-format",
+      "q": "The file your 3D printer actually reads while printing isn't the 3D model. It's a long list of exact movement and temperature commands — the same language that runs many factory cutting machines. What is it called?",
+      "answer_subject": "G-code",
+      "state": "G-code",
+      "detail": "Made by 'slicer' software from the model; the very same command language drives CNC mills and lathes.",
+      "why": "It separates the shape (an STL or 3MF model) from the instructions, which are thousands of precise moves the printer follows line by line.",
+      "more": "A slicer turns the model's triangle mesh into hundreds of flat layers, then writes the G-code moves that trace each one.",
+      "source": "Slicer/G-code documentation; G-code shared with CNC machining."
+    }
+  ]
+}

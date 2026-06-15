@@ -1,0 +1,111 @@
+{
+  "set_id": "2026-06-15-us-states",
+  "topic": "U.S. states",
+  "created": "2026-06-15",
+  "masthead": {
+    "eyebrow": "TRIVIA FIELD GUIDE",
+    "title_html": "Reason Your Way <span class=\"num\">Across</span> the States",
+    "title_plain": "Reason Your Way Across the States",
+    "dek": "Seven questions, seven different ways of measuring a state \u2014 latitude, size, height, age, people, lakes, lines on a map. Narrow the fifty down, then place your bet. Tap to check yourself.",
+    "footer_html": "Seven questions \u00b7 seven distinct dimensions (100% unique) \u00b7 sources noted per question."
+  },
+  "plan": {
+    "dimensions": ["latitude", "area", "elevation", "statehood", "population", "lakes", "subdivisions"],
+    "archetypes": ["extreme-north", "filtered-max", "bottom-end", "most-recent", "bottom-end", "filtered-max", "bottom-end"],
+    "unique_ratio": 1.0,
+    "doubled": []
+  },
+  "questions": [
+    {
+      "id": "2026-06-15-us-states-01",
+      "cat": "Geography \u00b7 Latitude",
+      "dimension": "latitude",
+      "archetype": "extreme-north",
+      "q": "Of all the state capitals in the connected 48 states, which one sits the farthest north?",
+      "answer_subject": "Olympia, Washington",
+      "state": "Olympia, Washington",
+      "detail": "About 47.0\u00b0N \u2014 the northernmost capital in the contiguous U.S.",
+      "why": "It edges out the capitals people picture as 'up north': roughly 0.2\u00b0 north of Bismarck, North Dakota (46.8\u00b0N) and well north of Helena, Montana (46.6\u00b0N).",
+      "more": "Most guesses go to Bismarck, Helena, or Augusta, Maine (44.3\u00b0N) \u2014 but the Pacific Northwest takes it. Juneau, Alaska (58\u00b0N) is the northernmost of all 50.",
+      "source": "U.S. extreme-points data; city coordinates (Olympia 47.04\u00b0N, Bismarck 46.81\u00b0N)."
+    },
+    {
+      "id": "2026-06-15-us-states-02",
+      "cat": "Geography \u00b7 Area",
+      "dimension": "area",
+      "archetype": "filtered-max",
+      "q": "Three states are bigger than this one, but every one of those three touches an ocean. What is the largest state with no ocean coast?",
+      "answer_subject": "Montana",
+      "state": "Montana",
+      "detail": "About 147,040 sq mi \u2014 4th-largest state, largest with no saltwater coastline.",
+      "why": "Only Alaska, Texas, and California are larger, and each meets the sea. Montana beats the next inland giant, New Mexico (~121,600 sq mi), by more than 25,000 sq mi.",
+      "more": "A common wrong guess is Texas, but its Gulf coast disqualifies it. Among states truly cut off from the ocean, Montana clears Nevada, Arizona, and Colorado comfortably.",
+      "source": "U.S. Census Bureau state area figures."
+    },
+    {
+      "id": "2026-06-15-us-states-03",
+      "cat": "Geography \u00b7 Elevation",
+      "dimension": "elevation",
+      "archetype": "bottom-end",
+      "q": "Every state has a single highest point. In one state, that highest point is lower than the highest point of any other state. Which state is it?",
+      "answer_subject": "Florida",
+      "state": "Florida",
+      "detail": "Its high point, Britton Hill, tops out at just 345 feet.",
+      "why": "Florida's tallest natural ground is the shortest 'peak' in the country \u2014 345 ft, more than 100 ft below the next-lowest, Delaware's Ebright Azimuth (448 ft).",
+      "more": "The fair finalists are all flat coastal states \u2014 Delaware, Louisiana, Mississippi, Rhode Island \u2014 but Florida's summit wins by a clear margin. Several Florida buildings stand taller than Britton Hill.",
+      "source": "USGS / state high-point elevations (Florida 345 ft; Delaware 448 ft)."
+    },
+    {
+      "id": "2026-06-15-us-states-04",
+      "cat": "History \u00b7 Statehood",
+      "dimension": "statehood",
+      "archetype": "most-recent",
+      "q": "Setting aside Alaska and Hawaii, which state was the last to join the United States?",
+      "answer_subject": "Arizona",
+      "state": "Arizona",
+      "detail": "Admitted February 14, 1912 \u2014 the 48th state.",
+      "why": "It barely earned last place: New Mexico joined the same year but five weeks earlier (January 6, 1912), leaving Arizona as the final piece of the lower 48.",
+      "more": "The other late arrivals were Oklahoma (1907) and New Mexico (1912). Alaska and Hawaii both came much later, in 1959.",
+      "source": "Library of Congress / U.S. statehood records (Arizona admitted Feb 14, 1912)."
+    },
+    {
+      "id": "2026-06-15-us-states-05",
+      "cat": "Demographics \u00b7 Population",
+      "dimension": "population",
+      "archetype": "bottom-end",
+      "q": "Which state has the fewest people living in it?",
+      "answer_subject": "Wyoming",
+      "state": "Wyoming",
+      "detail": "About 580,000 residents \u2014 the least populous state.",
+      "why": "Despite ranking 10th-largest by area, it holds fewer people than the city of Milwaukee \u2014 roughly 580,000 at the 2020 census.",
+      "more": "Vermont (~643,000) and Alaska (~733,000) are the next-fewest, so a couple of small states stay in play before you settle on Wyoming. (As of the 2020 census.)",
+      "source": "U.S. Census Bureau (Wyoming 2020 population 576,851)."
+    },
+    {
+      "id": "2026-06-15-us-states-06",
+      "cat": "Geography \u00b7 Lakes",
+      "dimension": "lakes",
+      "archetype": "filtered-max",
+      "q": "Several states sit on the Great Lakes. Which state touches the most of the five?",
+      "answer_subject": "Michigan",
+      "state": "Michigan",
+      "detail": "It borders four of the five Great Lakes \u2014 all but Lake Ontario.",
+      "why": "No other state touches more than two, so Michigan doubles the field: its two peninsulas put it on Superior, Michigan, Huron, and Erie.",
+      "more": "New York is one of the few states on two lakes (Erie and Ontario). The only Great Lake Michigan misses is Ontario.",
+      "source": "Standard U.S. geography references (Michigan borders 4 of 5 Great Lakes)."
+    },
+    {
+      "id": "2026-06-15-us-states-07",
+      "cat": "Government \u00b7 Subdivisions",
+      "dimension": "subdivisions",
+      "archetype": "bottom-end",
+      "q": "Which state is divided into the fewest counties?",
+      "answer_subject": "Delaware",
+      "state": "Delaware",
+      "detail": "Just 3 counties \u2014 Kent, New Castle, and Sussex.",
+      "why": "Nothing is close at the bottom: the next-fewest states have five each, so Delaware runs an entire state on about a third fewer top-level divisions than anyone else.",
+      "more": "Hawaii and Rhode Island come next at 5 (Rhode Island's have no county government at all). Louisiana uses parishes and Alaska uses boroughs instead of counties.",
+      "source": "U.S. Census Bureau county counts (Delaware: 3)."
+    }
+  ]
+}

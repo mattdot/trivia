@@ -1,0 +1,150 @@
+{
+  "set_id": "2026-06-15-croatia",
+  "topic": "Croatia",
+  "created": "2026-06-15",
+  "masthead": {
+    "eyebrow": "TRIVIA FIELD GUIDE",
+    "title_html": "Reason Your Way <span class=\"num\">Around</span> Croatia",
+    "title_plain": "Reason Your Way Around Croatia",
+    "dek": "Ten questions, ten different ways to measure Croatia — coast and islands, peaks and rivers, parks and borders. Narrow the field, place your bet, then tap to check yourself.",
+    "footer_html": "Ten questions · ten distinct dimensions (100% unique) · sources noted per question."
+  },
+  "plan": {
+    "dimensions": ["coastal-city population", "island population", "mountain elevation", "river length", "international border length", "national-park visitors", "lake area", "city latitude", "county area and density", "peninsula area"],
+    "archetypes": ["filtered-max", "max", "highest", "longest", "longest", "most-visited", "largest", "extreme-south", "largest-and-sparsest", "largest"],
+    "unique_ratio": 1.0,
+    "doubled": []
+  },
+  "questions": [
+    {
+      "id": "2026-06-15-croatia-01",
+      "cat": "Geography · Coastal population",
+      "dimension": "coastal-city population",
+      "archetype": "filtered-max",
+      "q": "Croatia's biggest city sits inland. Which city is the largest one that sits right on the seacoast?",
+      "answer_subject": "Split",
+      "state": "Split",
+      "detail": "About 160,000 people (2021) — Croatia's largest coastal city and its second-largest city overall.",
+      "why": "Zagreb, the inland capital, has roughly 770,000 people, but once you set the capital aside, Split clearly tops the coast — well ahead of the next seaside city.",
+      "more": "The next-largest coastal city, Rijeka, has about 108,000 people — roughly two-thirds of Split's size.",
+      "source": "Croatian Bureau of Statistics, 2021 census (Split 160,577; Rijeka 108,622)."
+    },
+    {
+      "id": "2026-06-15-croatia-02",
+      "cat": "Geography · Island population",
+      "dimension": "island population",
+      "archetype": "max",
+      "q": "Of all the islands along Croatia's coast, which one has the most people living on it year-round?",
+      "answer_subject": "Krk",
+      "state": "Krk",
+      "detail": "About 19,900 residents (2021) — the most populous Adriatic island.",
+      "why": "Krk is joined to the mainland by a bridge and sits right by the city of Rijeka, which helps it stay lived-in all year — more than any other Croatian island.",
+      "more": "Korčula, farther south, is next with around 15,500 people; Brač and Hvar follow.",
+      "source": "2021 Croatian census; Krk ~19,916 residents (Korčula ~15,500)."
+    },
+    {
+      "id": "2026-06-15-croatia-03",
+      "cat": "Nature · Elevation",
+      "dimension": "mountain elevation",
+      "archetype": "highest",
+      "q": "Which mountain holds the highest peak found anywhere in Croatia?",
+      "answer_subject": "Dinara",
+      "state": "Dinara",
+      "detail": "Its summit, Sinjal, reaches 1,831 meters (6,007 feet).",
+      "why": "Dinara rises on the border with Bosnia and Herzegovina and out-tops every coastal range; the whole Dinaric Alps mountain system takes its name from it.",
+      "more": "The next-highest summits — on Biokovo (1,762 m) and Velebit (1,757 m) — fall short by roughly 70 meters.",
+      "source": "Standard geographic references; Dinara / Sinjal peak 1,831 m."
+    },
+    {
+      "id": "2026-06-15-croatia-04",
+      "cat": "Nature · River length",
+      "dimension": "river length",
+      "archetype": "longest",
+      "q": "Which river runs the longest distance across Croatia, counting only the part inside the country?",
+      "answer_subject": "Sava",
+      "state": "Sava",
+      "detail": "About 562 km of its course lies within Croatia — the longest stretch of any river there.",
+      "why": "The Sava flows past Zagreb on its way toward the Danube; inside Croatia it more than doubles the in-country length of the next river.",
+      "more": "The Drava runs about 305 km inside Croatia. By a stricter rule — the longest river lying *entirely* within Croatia — the answer flips to the Kupa (296 km).",
+      "source": "Croatian geographic references; Sava 562 km in-country, Drava 305 km, Kupa 296 km."
+    },
+    {
+      "id": "2026-06-15-croatia-05",
+      "cat": "Geography · Border length",
+      "dimension": "international border length",
+      "archetype": "longest",
+      "q": "Croatia touches five countries by land. Which neighbor does it share its longest land border with?",
+      "answer_subject": "Bosnia and Herzegovina",
+      "state": "Bosnia and Herzegovina",
+      "detail": "Their shared boundary runs roughly 930 km — Croatia's longest land border by far.",
+      "why": "Croatia bends in a thin crescent that wraps around Bosnia and Herzegovina, so the two trace a long, winding line together — far longer than Croatia's border with Slovenia, its second-longest.",
+      "more": "Croatia's border with Slovenia is roughly 600 km; its shortest land border, with Montenegro, is only about 25 km.",
+      "source": "Geography of Croatia; Croatia–Bosnia and Herzegovina border ~932 km."
+    },
+    {
+      "id": "2026-06-15-croatia-06",
+      "cat": "Travel · Park visitors",
+      "dimension": "national-park visitors",
+      "archetype": "most-visited",
+      "q": "Croatia has eight national parks. Which one draws the most visitors each year?",
+      "answer_subject": "Plitvice Lakes",
+      "state": "Plitvice Lakes",
+      "detail": "More than 1.5 million visitors a year — Croatia's most-visited national park.",
+      "why": "Its staircase of terraced lakes and waterfalls made it one of the country's first UNESCO World Heritage sites (1979), and it pulls in more people than any other park.",
+      "more": "Krka, also famous for its waterfalls, is the runner-up with close to 1 million visitors a year.",
+      "source": "Plitvice Lakes National Park visitor figures; UNESCO World Heritage listing (1979)."
+    },
+    {
+      "id": "2026-06-15-croatia-07",
+      "cat": "Nature · Lake area",
+      "dimension": "lake area",
+      "archetype": "largest",
+      "q": "Which is the largest natural lake in Croatia?",
+      "answer_subject": "Vransko jezero (Vrana Lake)",
+      "state": "Vransko jezero (Vrana Lake)",
+      "detail": "About 30 km² of surface, near the town of Biograd on the Dalmatian coast.",
+      "why": "Even as the country's biggest natural lake, it is strikingly shallow — only about 2 to 6 meters deep — and sits just behind the shoreline as a refuge for wintering birds.",
+      "more": "Bigger bodies of water exist in Croatia, but they are man-made reservoirs such as Lake Peruča — not natural lakes.",
+      "source": "Vransko Jezero Nature Park; lake surface ~30 km²."
+    },
+    {
+      "id": "2026-06-15-croatia-08",
+      "cat": "Geography · Latitude",
+      "dimension": "city latitude",
+      "archetype": "extreme-south",
+      "q": "Which of Croatia's well-known cities lies the farthest south?",
+      "answer_subject": "Dubrovnik",
+      "state": "Dubrovnik",
+      "detail": "At about 42.6°N, the southernmost of Croatia's major cities.",
+      "why": "Dubrovnik sits at the far southern tip of the coast — so far that a short strip of Bosnian land at Neum cuts it off from the rest of the country.",
+      "more": "For years you had to cross into Bosnia and Herzegovina and back to drive there from the rest of Croatia — until the Pelješac Bridge opened in 2022 to skip the crossing.",
+      "source": "City coordinates (Dubrovnik ~42.65°N)."
+    },
+    {
+      "id": "2026-06-15-croatia-09",
+      "cat": "Geography · County area",
+      "dimension": "county area and density",
+      "archetype": "largest-and-sparsest",
+      "q": "Croatia is split into 20 counties plus its capital. Which county covers the most land, yet has the fewest people of them all?",
+      "answer_subject": "Lika-Senj County",
+      "state": "Lika-Senj County",
+      "detail": "About 5,350 km² — the largest county by area and the smallest by population (~43,000).",
+      "why": "It's the rugged, forested interior holding the Velebit mountains, so it looms large on the map but is very thinly settled — only around 8 people per km².",
+      "more": "It contains both Plitvice Lakes and Northern Velebit national parks, yet has fewer residents than a single mid-size city.",
+      "source": "Croatian Bureau of Statistics; Lika-Senj 5,353 km², population 42,748 (2021)."
+    },
+    {
+      "id": "2026-06-15-croatia-10",
+      "cat": "Geography · Peninsula area",
+      "dimension": "peninsula area",
+      "archetype": "largest",
+      "q": "Croatia's northwest is taken up by one big, roughly triangular peninsula — also the largest in the whole Adriatic Sea. Which peninsula is it?",
+      "answer_subject": "Istria",
+      "state": "Istria",
+      "detail": "About 3,600 km², with roughly 90% of it in Croatia and small parts in Slovenia and Italy.",
+      "why": "Istria is the Adriatic's largest peninsula; its green, hilly interior of vineyards and stone hilltop towns has earned it the nickname 'Croatian Tuscany.'",
+      "more": "Croatia's next major peninsula, Pelješac in the south, is far smaller at roughly 350 km².",
+      "source": "Istria regional data; peninsula area ~3,600 km² (~90% in Croatia)."
+    }
+  ]
+}

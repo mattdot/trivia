@@ -40,9 +40,26 @@ python scripts/build_index.py
 
 # Render a playable HTML guide into output/
 python scripts/render.py library/sets/2026-06-15-us-states.json
+
+# Build the whole library into a static site (gallery + one page per game)
+python scripts/build_site.py        # writes ./site/index.html + site/games/*.html
 ```
 
 On Windows/PowerShell the commands are identical (`python scripts\stats.py`).
+
+## Publish to GitHub Pages
+
+The site is built fresh from the set files — nothing rendered is committed.
+`.github/workflows/pages.yml` runs `scripts/build_site.py` and deploys `site/`
+to Pages on every push to `main` (and on demand via **Run workflow**).
+
+**One-time setup:** in the repo, go to **Settings → Pages → Build and
+deployment → Source** and choose **GitHub Actions**. After the next push to
+`main`, your games are live at `https://<user>.github.io/<repo>/` — a
+mobile-first gallery that links to each tap-to-reveal game. Open it on a phone
+to play.
+
+To preview locally, run `python scripts/build_site.py` and open `site/index.html`.
 
 ## How uniqueness works
 
@@ -64,7 +81,9 @@ rare case where the same subject is fair under a genuinely different question.
 .claude/skills/trivia-generator/   the generator skill (SKILL.md + assets/)
 library/sets/                      one JSON file per game (source of truth)
 library/index.jsonl, INDEX.md      derived; rebuilt by build_index.py
-scripts/                           check / add / index / render / stats
+scripts/                           check / add / index / render / build_site / stats
 output/                            rendered HTML guides (gitignored by default)
+site/                              the Pages build — gallery + games (derived, gitignored)
+.github/workflows/pages.yml        builds the site and deploys it to GitHub Pages
 CLAUDE.md                          the loop Claude Code follows here
 ```

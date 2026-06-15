@@ -2,6 +2,10 @@
 # Comment this out if you'd rather keep playable HTML in the repo.
 /output/*.html
 
+# The Pages site is built fresh from the set files by scripts/build_site.py
+# (and by .github/workflows/pages.yml). Derived data — never committed.
+/site/
+
 __pycache__/
 *.pyc
 .DS_Store

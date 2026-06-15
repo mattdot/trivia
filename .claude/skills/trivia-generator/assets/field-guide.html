@@ -7,15 +7,16 @@
 <style>
   /* ============================================================
      TRIVIA FIELD GUIDE — self-contained, no external assets,
-     no browser storage. Opens cleanly inside the Claude app.
-     Theme: a topographic survey field guide. The one signature
-     element is the benchmark medallion that carries each number;
-     everything else stays quiet so the questions read first.
+     no browser storage, NO JavaScript required to play. Each
+     question is a native <details> tap target that reveals only
+     its own answer, so the page works in any HTML viewer (incl.
+     sandboxed/script-blocked ones like in-app previews). A small
+     optional script adds a Reveal-all control + live counter when
+     scripts are allowed; without it, per-question tapping still
+     works fully and the control simply stays hidden.
      ============================================================ */
 
   :root{
-    /* Palette — drafting paper + contour bistre, survey-blue focus.
-       Deliberately leans sepia/olive (a map), not the cream+terracotta default. */
     --paper:#f1efe6;
     --card:#fbfaf4;
     --ink:#2a2823;
@@ -27,10 +28,6 @@
     --line-soft:rgba(42,40,35,.08);
     --focus:#2f6db0;       /* survey water-blue, high contrast */
 
-    /* Type roles, all from system fonts so the file is fully offline.
-       Serif = almanac/guidebook voice (display + questions).
-       Sans  = maximum legibility (answers, UI).
-       Mono  = survey readout (numbers, small labels). */
     --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
     --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,system-ui,sans-serif;
     --mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,"Roboto Mono",monospace;
@@ -103,12 +100,14 @@
     max-width:46ch;
   }
 
-  /* ---- Control bar (sticky) ---- */
+  /* ---- Control bar (sticky) — progressive enhancement only ----
+     Hidden unless the optional script runs, so script-blocked
+     viewers never show a dead button. */
   .controls{
+    display:none;
     position:sticky;
     top:0;
     z-index:5;
-    display:flex;
     align-items:center;
     justify-content:space-between;
     gap:12px;
@@ -118,6 +117,7 @@
     backdrop-filter:saturate(1.2) blur(8px);
     border-bottom:1px solid var(--line-soft);
   }
+  body.has-js .controls{display:flex}
   .count{
     font-family:var(--mono);
     font-size:.82rem;
@@ -140,9 +140,9 @@
   }
   .toggle-all:active{transform:translateY(1px)}
 
-  /* ---- Question cards ---- */
-  ol.deck{list-style:none;margin:0;padding:8px 0 0}
-  .card{
+  /* ---- Question cards (native <details>, no JS needed) ---- */
+  .deck{margin:0;padding:8px 0 0}
+  details.card{
     background:var(--card);
     border:1px solid var(--line);
     border-radius:var(--radius);
@@ -152,22 +152,19 @@
   }
 
   /* The whole question is the reveal control — a big, obvious tap target. */
-  .q-toggle{
-    appearance:none;
+  summary.q-toggle{
+    list-style:none;
     -webkit-tap-highlight-color:transparent;
-    width:100%;
     display:grid;
     grid-template-columns:auto 1fr;
     gap:14px;
     align-items:start;
     text-align:left;
-    background:none;
-    border:0;
-    color:inherit;
-    font:inherit;
     padding:18px;
     cursor:pointer;
   }
+  summary.q-toggle::-webkit-details-marker{display:none}
+  summary.q-toggle::marker{content:""}
 
   /* Signature element: a survey benchmark medallion. */
   .medallion{
@@ -205,6 +202,7 @@
     font-size:1.14rem;
     line-height:1.42;
     color:var(--ink);
+    display:block;
   }
   .hint{
     display:inline-flex;
@@ -216,6 +214,10 @@
     letter-spacing:.04em;
     color:var(--contour);
   }
+  .hint .lbl-open{display:none}
+  details[open] .hint .lbl-closed{display:none}
+  details[open] .hint .lbl-open{display:inline}
+  details[open] .hint{color:var(--olive)}
   .chev{
     width:9px;height:9px;
     border-right:1.5px solid currentColor;
@@ -223,25 +225,18 @@
     transform:rotate(45deg);
     transition:transform .25s ease;
   }
-  .card.is-open .hint{color:var(--olive)}
-  .card.is-open .chev{transform:rotate(-135deg)}
-  .card.is-open .medallion{background:var(--olive);border-color:var(--olive);color:var(--card)}
-  .card.is-open .medallion::before,
-  .card.is-open .medallion::after{background:var(--olive)}
+  details[open] .chev{transform:rotate(-135deg)}
+  details[open] .medallion{background:var(--olive);border-color:var(--olive);color:var(--card)}
+  details[open] .medallion::before,
+  details[open] .medallion::after{background:var(--olive)}
 
-  /* Animated disclosure via the grid-rows technique (smooth, robust). */
-  .answer{
-    display:grid;
-    grid-template-rows:0fr;
-    transition:grid-template-rows .28s ease;
-  }
-  .card.is-open .answer{grid-template-rows:1fr}
-  .answer-inner{overflow:hidden}
   .answer-pad{
     padding:2px 18px 20px 18px;
     border-top:1px solid var(--line-soft);
     margin-top:2px;
   }
+  @keyframes revealIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+  details[open] .answer-pad{animation:revealIn .25s ease}
 
   .label{
     font-family:var(--mono);
@@ -260,6 +255,7 @@
     font-weight:600;
     line-height:1.3;
     color:var(--ink);
+    display:block;
   }
   .ans-detail{
     display:block;
@@ -281,15 +277,15 @@
   }
 
   /* Accessibility floor */
-  .q-toggle:focus-visible,
+  summary.q-toggle:focus-visible,
   .toggle-all:focus-visible{
     outline:3px solid var(--focus);
     outline-offset:2px;
     border-radius:12px;
   }
   @media (prefers-reduced-motion: reduce){
-    .answer{transition:none}
     .chev{transition:none}
+    details[open] .answer-pad{animation:none}
   }
 
   footer{
@@ -325,179 +321,45 @@
       <button class="toggle-all" id="toggleAll" type="button">Reveal all</button>
     </div>
 
-    <ol class="deck" id="deck"></ol>
+    <!-- The renderer replaces the marker below with one <details> card per
+         question (server-rendered, fully escaped). No script needed to play. -->
+    <div class="deck" id="deck">
+<!--__CARDS__-->
+    </div>
 
     <footer>__FOOTER_HTML__</footer>
   </div>
 
 <script>
-  /* The renderer replaces the marker below with comma-separated question
-     objects. Each object: { cat, q, state, detail, why, more, source }.
-     Left empty, the page shows a gentle empty state instead of crashing. */
-  const QUESTIONS = [
-    /*__QUESTIONS__*/
-  ];
+  /* Optional progressive enhancement: a Reveal-all/Hide-all control and a live
+     "revealed N of M" counter. The cards already work without this — if the
+     viewer blocks scripts, the control stays hidden and per-question tapping
+     is unaffected. */
+  (function(){
+    var deck = document.getElementById('deck');
+    if (!deck) return;
+    var cards = Array.prototype.slice.call(deck.querySelectorAll('details.card'));
+    if (!cards.length) return;
+    document.body.classList.add('has-js');
 
-  const deck = document.getElementById('deck');
-  const revealedEl = document.getElementById('revealed');
-  const totalEl = document.getElementById('total');
-  const toggleAllBtn = document.getElementById('toggleAll');
+    var revealedEl = document.getElementById('revealed');
+    var totalEl = document.getElementById('total');
+    var btn = document.getElementById('toggleAll');
+    totalEl.textContent = cards.length;
 
-  // textContent everywhere — apostrophes, em-dashes, °, & are all safe.
-  function setText(el, text){ el.textContent = (text == null ? '' : String(text)); }
-
-  function buildCard(item, i){
-    const li = document.createElement('li');
-    li.className = 'card';
-
-    const btn = document.createElement('button');
-    btn.className = 'q-toggle';
-    btn.type = 'button';
-    btn.setAttribute('aria-expanded', 'false');
-    const ansId = 'ans-' + i;
-    btn.setAttribute('aria-controls', ansId);
-
-    const med = document.createElement('span');
-    med.className = 'medallion';
-    med.setAttribute('aria-hidden', 'true');
-    setText(med, i + 1);
-
-    const main = document.createElement('span');
-    main.className = 'q-main';
-    if (item.cat){
-      const cat = document.createElement('span');
-      cat.className = 'cat';
-      setText(cat, item.cat);
-      main.appendChild(cat);
+    function update(){
+      var open = cards.filter(function(c){ return c.open; }).length;
+      revealedEl.textContent = open;
+      btn.textContent = (open === cards.length) ? 'Hide all' : 'Reveal all';
     }
-    const q = document.createElement('span');
-    q.className = 'q-text';
-    setText(q, item.q);
-    main.appendChild(q);
-
-    const hint = document.createElement('span');
-    hint.className = 'hint';
-    const hintLabel = document.createElement('span');
-    hintLabel.className = 'hint-label';
-    setText(hintLabel, 'Tap to reveal');
-    const chev = document.createElement('span');
-    chev.className = 'chev';
-    chev.setAttribute('aria-hidden', 'true');
-    hint.appendChild(hintLabel);
-    hint.appendChild(chev);
-    main.appendChild(hint);
-
-    btn.appendChild(med);
-    btn.appendChild(main);
-
-    // Answer region
-    const ans = document.createElement('div');
-    ans.className = 'answer';
-    ans.id = ansId;
-    ans.setAttribute('role', 'region');
-    ans.setAttribute('aria-hidden', 'true');
-
-    const inner = document.createElement('div');
-    inner.className = 'answer-inner';
-    const pad = document.createElement('div');
-    pad.className = 'answer-pad';
-
-    // Answer (state + detail)
-    pad.appendChild(makeLabel('Answer'));
-    const aMain = document.createElement('span');
-    aMain.className = 'ans-main';
-    setText(aMain, item.state);
-    pad.appendChild(aMain);
-    if (item.detail){
-      const aDet = document.createElement('span');
-      aDet.className = 'ans-detail';
-      setText(aDet, item.detail);
-      pad.appendChild(aDet);
-    }
-
-    if (item.why) pad.appendChild(makeField('Why it\u2019s interesting', item.why));
-    if (item.more) pad.appendChild(makeField('Follow-on', item.more));
-    if (item.source) pad.appendChild(makeField('Source', item.source, true));
-
-    inner.appendChild(pad);
-    ans.appendChild(inner);
-
-    btn.addEventListener('click', function(){ toggle(li, btn, ans, hintLabel); });
-
-    li.appendChild(btn);
-    li.appendChild(ans);
-    return li;
-  }
-
-  function makeLabel(text){
-    const l = document.createElement('span');
-    l.className = 'label';
-    setText(l, text);
-    return l;
-  }
-
-  function makeField(labelText, body, isSource){
-    const frag = document.createDocumentFragment();
-    frag.appendChild(makeLabel(labelText));
-    const wrap = document.createElement('div');
-    wrap.className = 'field';
-    const p = document.createElement('p');
-    if (isSource) p.className = 'source-text';
-    setText(p, body);
-    wrap.appendChild(p);
-    frag.appendChild(wrap);
-    return frag;
-  }
-
-  function toggle(li, btn, ans, hintLabel){
-    const open = li.classList.toggle('is-open');
-    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-    ans.setAttribute('aria-hidden', open ? 'false' : 'true');
-    setText(hintLabel, open ? 'Hide answer' : 'Tap to reveal');
-    updateCount();
-  }
-
-  function updateCount(){
-    const cards = deck.querySelectorAll('.card');
-    const open = deck.querySelectorAll('.card.is-open').length;
-    setText(revealedEl, open);
-    const allOpen = cards.length > 0 && open === cards.length;
-    setText(toggleAllBtn, allOpen ? 'Hide all' : 'Reveal all');
-  }
-
-  toggleAllBtn.addEventListener('click', function(){
-    const cards = Array.prototype.slice.call(deck.querySelectorAll('.card'));
-    const allOpen = cards.length > 0 && cards.every(c => c.classList.contains('is-open'));
-    cards.forEach(function(li){
-      const btn = li.querySelector('.q-toggle');
-      const ans = li.querySelector('.answer');
-      const hintLabel = li.querySelector('.hint-label');
-      const shouldOpen = !allOpen;
-      li.classList.toggle('is-open', shouldOpen);
-      btn.setAttribute('aria-expanded', shouldOpen ? 'true' : 'false');
-      ans.setAttribute('aria-hidden', shouldOpen ? 'false' : 'true');
-      setText(hintLabel, shouldOpen ? 'Hide answer' : 'Tap to reveal');
+    cards.forEach(function(c){ c.addEventListener('toggle', update); });
+    btn.addEventListener('click', function(){
+      var allOpen = cards.every(function(c){ return c.open; });
+      cards.forEach(function(c){ c.open = !allOpen; });
+      update();
     });
-    updateCount();
-  });
-
-  function render(){
-    if (!Array.isArray(QUESTIONS) || QUESTIONS.length === 0){
-      const p = document.createElement('p');
-      p.className = 'empty';
-      setText(p, 'No questions loaded.');
-      deck.appendChild(p);
-      setText(totalEl, 0);
-      return;
-    }
-    const frag = document.createDocumentFragment();
-    QUESTIONS.forEach(function(item, i){ frag.appendChild(buildCard(item, i)); });
-    deck.appendChild(frag);
-    setText(totalEl, QUESTIONS.length);
-    updateCount();
-  }
-
-  render();
+    update();
+  })();
 </script>
 </body>
 </html>

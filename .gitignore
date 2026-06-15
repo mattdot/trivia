@@ -1,6 +1,8 @@
-# Rendered guides are derived from library/sets/*.json — regenerate with render.py.
-# Comment this out if you'd rather keep playable HTML in the repo.
-/output/*.html
+# Rendered guides and preview images are derived from library/sets/*.json —
+# regenerate with render.py / build_site.py. Comment this out if you'd rather
+# keep playable HTML in the repo. (.gitkeep is tracked so the dir survives.)
+/output/*
+!/output/.gitkeep
 
 # The Pages site is built fresh from the set files by scripts/build_site.py
 # (and by .github/workflows/pages.yml). Derived data — never committed.

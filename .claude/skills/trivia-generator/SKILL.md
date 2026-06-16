@@ -88,8 +88,17 @@ Apply the standards below as you write, then run the final checklist.
 
 The two best difficulty levers, both of which preserve guessability:
 
-- **Condition-qualified records.** "Largest country by area" is a gimme; "largest landlocked country" is hard, fresh, and still reasonable — the solver pictures the map and tests candidates. Prefer conditions a reasoner can *navigate* (era, region, "without X," "that never did Y," minimum threshold, population/budget class, institution type) over conditions that are merely narrow. Several questions in a strong set should have answers that are not overall leaders but leaders *under a filter.* State the condition plainly in the stem; explain the threshold or caveat in the answer fields.
+- **Condition-qualified records.** "Largest country by area" is a gimme; adding a filter — "largest country completely surrounded by just one other" — makes it hard yet still reasonable: the solver pictures the map and tests candidates. Two cautions, both learned from play:
+  - **The filter must be one a player would naturally reason with, not a carve-out to dodge a technicality.** "Highest GDP per person *among countries big enough to rank*" is gerrymandered — the qualifier exists only to fence out Monaco, and the seam shows. If the clean answer is a technicality you have to exclude, the dimension is wrong; pick another rather than building an arbitrary fence.
+  - **Condition-qualified is necessary but not sufficient — the result still has to be fresh** (see "Freshness" below). "Largest landlocked country," "longest coastline," "smallest country" are all condition-qualified *and* tired warhorses; a player who quizzes has met them and answers from memory.
+  Prefer conditions a reasoner can *navigate* (era, region, "without X," "that never did Y," minimum threshold, population/budget class, institution type) over conditions that are merely narrow. Several questions in a strong set should have answers that are not overall leaders but leaders *under a filter.* State the condition plainly in the stem; explain the threshold or caveat in the answer fields.
 - **Bottom-end inversions.** Trivia culture over-indexes on biggest/most, so fewest/smallest/lowest/narrowest are inherently fresher, and they defeat the solver's reflex to reach for the famous large thing. Deliberately seed: fewest wins by a champion, lowest winning score, smallest country/city/company to achieve X, shortest reign or streak, narrowest margin, lowest rate among leaders, least populous place with a record, smallest budget to reach a milestone. **Do not let the set point only upward.**
+
+### Freshness: skip the warhorses
+
+A question can be reasoning-driven, well-posed, *and* listable and still be weak because everyone has already met it. Pub-quiz culture has a stock of chestnuts — largest landlocked country (Kazakhstan), longest coastline (Canada), the city spanning two continents (Istanbul), smallest country (Vatican), highest capital (La Paz). When a player has likely seen the exact question before, the reasoning mechanic is dead on arrival: they answer from memory of the *question*, not by reasoning over the set. That also covers the "you either know it or you don't" failure — a famous one-fact identity question is recall wearing a filter's clothes.
+
+Before keeping a question, ask: **would this feel familiar to someone who does quizzes?** If yes, keep the dimension but change the angle — invert to the bottom end, add a tighter filter, or find a less-obvious record on the same axis — or drop it. **A common move that rescues a chestnut is to re-slice it to a region, hemisphere, or era, so the answer is no longer the memorized global one.** "Largest landlocked country" is stale (everyone knows Kazakhstan), but "largest landlocked country in South America" (Bolivia) or "the largest in the Southern Hemisphere" re-opens the reasoning because the answer moves off the warhorse. The test isn't the dimension, it's whether the *answer* is the one a quizzer has already memorized. Novelty of the *specific question* is part of the difficulty-from-reasoning bargain, not a separate nicety. (Obscurity of the *answer* is still fine when the answer is the payoff — a surprising, delightful result the player couldn't have guessed cold is a feature; a worn-out question is the defect.)
 
 ### Felt variety
 
@@ -111,7 +120,9 @@ Many rankings flip under a reasonable change of definition (longest river; large
 
 ### No giveaways
 
-Don't hand the solver the answer or the path to it. Keep out of the stem: source names, dataset names, publication names, governing-body names, reference-work names (unless the source itself is the answer subject); and the runner-up, predecessor, overtaken record-holder, or obvious comparator. Avoid "who overtook X," "ahead of Y," "according to Z," "unlike X," "beating the previous record of Y." Those details belong in the Follow-on. But indirection must not create ambiguity — every stem must stay well-posed (gate step 3: exactly one *correct* answer, even though several finalists may look plausible to the solver).
+Don't hand the solver the answer or the path to it. Keep out of the stem: source names, dataset names, publication names, governing-body names, reference-work names (unless the source itself is the answer subject); and the runner-up, predecessor, overtaken record-holder, or obvious comparator. Avoid "who overtook X," "ahead of Y," "according to Z," "unlike X," "beating the previous record of Y." Those details belong in the Follow-on.
+
+**Also keep out the answer's own discriminating figure** — the very number, year, or measurement that singles it out. "Which country broke away *in 2011*" and "which country has *over a quarter-million* islands" both leak the fact the player is supposed to reason toward; they match the number instead of earning it. Name the category ("the world's newest nation," "the country with the most islands"), never the value. If the stem needs a threshold to be well-posed, make it a *boundary the solver reasons against* (e.g. "with no coastline at all"), not the answer's defining stat. But indirection must not create ambiguity — every stem must stay well-posed (gate step 3: exactly one *correct* answer, even though several finalists may look plausible to the solver).
 
 ### Reading level: 6th grade in the stem, precise everywhere else
 
@@ -184,5 +195,6 @@ Before delivering, confirm:
 - [ ] **≥75% of questions sit on a unique dimension** (no other question shares that axis); no dimension used more than twice; the Plan block states the actual ratio.
 - [ ] The set is **not clustered** by source, source type, era, geography, answer, statistic, dimension, or archetype; first five vary on five different dimensions; each question differs from the previous 3–5.
 - [ ] Upward superlatives don't dominate; several questions use **filters/thresholds** and several are **bottom-end/inverted**.
+- [ ] No **warhorses** (largest landlocked, longest coastline, smallest country, city-on-two-continents, etc.) and no stem leaking the answer's own discriminating figure; any filter is one a player would naturally reason with, not a carve-out.
 - [ ] Contested-definition answers are flagged.
 - [ ] Every Follow-on adds a useful quantified comparison.

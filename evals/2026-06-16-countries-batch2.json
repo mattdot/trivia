@@ -1,0 +1,26 @@
+{
+  "batch_id": "2026-06-16-countries-batch2",
+  "topic": "Countries of the world",
+  "purpose": "Second human-eval batch, applying the rules distilled from batch #1: no warhorses, no figure-hints in the stem, natural (non-gerrymandered) filters, clean inversions, lean into surprising answers and bottom-end records. NOT filed to the library.",
+  "created": "2026-06-16",
+  "rules_applied": [
+    "No chestnuts (largest landlocked / longest coastline / smallest country / city-on-two-continents).",
+    "No stem leaks the answer's discriminating figure.",
+    "Filters are ones a player naturally reasons with, not carve-outs.",
+    "Several bottom-end / surprising-answer items; each on its own dimension."
+  ],
+  "candidates": [
+    {"n": 1, "dimension": "forest cover (% land)", "archetype": "surprising-max", "q": "Which country has a greater share of its land covered by forest than any other?", "answer": "Suriname (~97%)", "note": "Beats Gabon (~91%) and Guyana (~87%). Surprising — not a country most would name. Finalists Suriname, Gabon, Guyana, Bhutan."},
+    {"n": 2, "dimension": "driving side", "archetype": "filtered-max", "q": "Of all the countries where people drive on the left, which has the most people?", "answer": "India (~1.4B)", "note": "Natural filter; reasoner lists left-driving (ex-British) countries. Finalists India, Indonesia(no, right), Japan, Pakistan, Bangladesh."},
+    {"n": 3, "dimension": "equatorial geography", "archetype": "filtered-max", "q": "The Equator runs through more than a dozen countries. Which of them is the largest by land?", "answer": "Brazil", "note": "Finalists Brazil, DR Congo, Indonesia, Colombia, Kenya."},
+    {"n": 4, "dimension": "landlocked topology", "archetype": "fun-filter", "q": "Only two countries are 'doubly landlocked' — you must cross two borders to reach any sea. Which of the two is larger?", "answer": "Uzbekistan", "note": "The other is Liechtenstein. Like the Lesotho item: concept is the delight, 'larger' is a clean tiebreak."},
+    {"n": 5, "dimension": "capital vs largest city", "archetype": "filtered-max", "q": "Which is the most populous country whose capital is not also its largest city?", "answer": "China (Beijing < Shanghai)", "note": "Shanghai ~28M > Beijing ~22M. India excluded (Delhi is both). Finalists China, USA, Brazil, Pakistan, Australia."},
+    {"n": 6, "dimension": "population density (low)", "archetype": "bottom-end", "q": "Which country has fewer people for each square mile of land than any other?", "answer": "Mongolia (~2/km²)", "note": "Greenland isn't sovereign. Finalists Mongolia, Namibia, Australia, Iceland."},
+    {"n": 7, "dimension": "colonial history", "archetype": "fun-filter", "q": "Only two countries in Africa were never formally colonized by a European power. Which of the two is larger?", "answer": "Ethiopia", "note": "The other is Liberia. Mirrors the 'fun filtered record' that rated well in batch 1."},
+    {"n": 8, "dimension": "World Heritage sites", "archetype": "tight-race-max", "q": "Which country has more UNESCO World Heritage sites than any other?", "answer": "Italy (61, as of 2025)", "note": "China is one behind at 60 — a genuine coin-flip bet. Finalists Italy, China, Germany, France, Spain. Flag: count shifts yearly."},
+    {"n": 9, "dimension": "hemisphere position", "archetype": "surprising-identity", "q": "Which is the only country whose own territory sits in all four hemispheres at once — north and south, east and west?", "answer": "Kiribati", "note": "Sits where the Equator meets the date line. France/US/UK qualify only via overseas territories. Reasoning: must cross equator AND 180° → a spread-out Pacific nation."},
+    {"n": 10, "dimension": "coffee per person", "archetype": "per-capita-surprising", "q": "People in which country drink more coffee per person than anywhere else?", "answer": "Finland", "note": "Nordic sweep; finalists Finland, Norway, Iceland, Netherlands, Sweden. Natural per-capita, no carve-out."},
+    {"n": 11, "dimension": "language demographics", "archetype": "filtered-max", "q": "Which country has more people who speak Spanish as their first language than any other — more even than Spain itself?", "answer": "Mexico (~130M)", "note": "Finalists Mexico, Colombia, Argentina, USA. Spain (~47M) is far down. Border 'more than Spain' is a boundary to reason against, not the answer's figure."},
+    {"n": 12, "dimension": "area (smallest, regional)", "archetype": "bottom-end + region", "q": "Which is the smallest country on the African mainland?", "answer": "The Gambia", "note": "Seychelles is smaller but an island nation — flag the mainland qualifier. Finalists Gambia, Eswatini, Djibouti, Rwanda. Re-sliced bottom-end record."}
+  ]
+}

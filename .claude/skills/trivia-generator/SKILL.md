@@ -97,6 +97,8 @@ Apply the standards below as you write, then run the final checklist.
 
 ### Difficulty comes from filters and inversions, not obscurity
 
+**The master difficulty dial is the slicer: a filter that removes the obvious answer.** This is the controllable path between the two bad options — taking the canonical answer (too easy) or hunting for a naturally weird record (risks obscurity). Instead, take the easy question and *slice out the obvious*: "most Olympic golds?" → USA (gimme) becomes "most golds among countries that have never *hosted*?" — the host giants are gone and the solver must reason one tier down to a still-defensible contender. "First modern Olympics?" → Athens becomes "first in the *Southern Hemisphere*?" → Melbourne. It is a true dial: each additional or tighter slice peels off another obvious tier, raising difficulty by degrees, and the difficulty stays *reasoning-based* — the solver applies the filter and re-ranks, never needing a memorized figure. The slicer is also the **constructive way to manufacture a reflex-defeater**: you don't have to get lucky finding a non-obvious record, you remove the obvious one. (Same guardrails as any filter below: it must bind, read as natural not gerrymandered, and not give the answer away.)
+
 The two best difficulty levers, both of which preserve guessability:
 
 - **Condition-qualified records.** "Largest country by area" is a gimme; adding a filter — "largest country completely surrounded by just one other" — makes it hard yet still reasonable: the solver pictures the map and tests candidates. Two cautions, both learned from play:

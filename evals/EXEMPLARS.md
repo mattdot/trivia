@@ -37,3 +37,16 @@ Each entry notes the *rule* it teaches so the pattern transfers off-topic.
 - **Revealing set cardinality** — "the *only two* doubly-landlocked countries, which is larger?" Rated "why are we giving away that there are two?" *Rule:* the count is a clue; state the property, not how many qualify.
 - **Unspecified metric on a superlative** — same item, "how are we measuring largest?" *Rule:* when "largest/biggest" could mean area or population, say which.
 - **Named-comparator boundary** — "more first-language Spanish speakers than *Spain* itself" → Mexico. Rated "giving away that it's not Spain." *Rule:* "more than [named X]" eliminates X for the solver; drop the named comparison.
+
+## Gold (batch 3) — off-register dimensions, mostly rated good→excellent
+
+- **Reflex-defeaters** — beer per person → Czechia ("surprised it's not Germany"); tea per person → Turkey ("more surprised it's not China or India"); films/year → India (not Hollywood); olive oil → Spain (not Italy); cars exported → China (overtook Japan). *Rule:* the obvious first guess being wrong is exactly where the bet lives. Seed several per set.
+- **Bottom-end filter** — most populous country never to win an Olympic medal → Bangladesh. Rated "excellent." *Rule:* a population filter on a *success* axis (not on geography) where the gap to #2 is huge (Bangladesh ~170M vs Cambodia ~16M).
+- **Off-register economy/history** — most populous dollar-adopting country → Ecuador; first to give women the vote → New Zealand; oldest central bank → Sweden. *Rule:* currency policy, political firsts, institutional age are fresh axes on a "countries" topic.
+- **The reveal is a hook** — "most living languages" → Papua New Guinea, rated "I'm curious to learn how many… one of the hooks of the game." *Rule:* the figure kept out of the stem must land in *Why-it's-interesting* as the payoff; the game teaches the memorable number on reveal.
+
+## Anti-patterns (batch 3) — all metric-precision
+
+- **Trivially-correct insider** — "most populous country that uses the US dollar as its official currency" is literally the USA. *Rule:* frame the set so the obvious insider falls out naturally ("a country that gave up its own money for the dollar"), not by unstated assumption.
+- **Unspecified measure** — "oldest royal family." Rated "are we talking how old they are now or length of the dynasty?" *Rule:* name the measure ("going back the most centuries unbroken") — but without tipping the answer's type.
+- **Gloss gone vague** — "leans on remittances… as a share of everything it produces." Rated "is that household income?" *Rule:* when a 6th-grade gloss stops pinning the metric, precision wins — say "share of its whole economy (GDP)."

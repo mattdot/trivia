@@ -119,6 +119,16 @@ Sourcing serves two ends: *your* confidence that the answer is both correct and 
 
 Many rankings flip under a reasonable change of definition (longest river; largest company by market cap vs. revenue vs. employees; highest mountain by elevation vs. base-to-peak). If the answer would change under another fair definition, either avoid the question or **state the definition used in the stem and note the flip in the Follow-on.** Don't present a contested ranking as settled.
 
+### Name the metric — and don't let plain words blur it
+
+A superlative without a stated measure is ambiguous, and the ambiguity is a defect even when the intended answer is clear to *you*. Three failure modes, all seen in play:
+
+- **Unspecified measure.** "The oldest royal family" — oldest *living monarch* or *longest unbroken dynasty*? "Largest" — by area or population? Name the measure in the stem. The catch: name it **without tipping the answer's type** — say "going back the most centuries unbroken," not "the oldest hereditary imperial line," which fingers the one finalist.
+- **A plain-language gloss that drifts into vagueness.** Simplifying for 6th-grade is right until the simple words stop pinning the metric down. "Leans on remittances more than any other, as a share of everything it produces" was meant as GDP but read as household income. When a gloss goes fuzzy, the reading-level hard rule applies: precision wins — say "as a share of its whole economy (its GDP)" rather than a folksy paraphrase that could mean three things.
+- **A trivially-correct insider the stem forgets to exclude.** "Most populous country that uses the US dollar as its official currency" is, read literally, the United States. The interesting set — countries that *adopted* the dollar in place of their own — is legitimate, not a gerrymander, but the stem must frame it so the insider falls out naturally and unmistakably ("a country that gave up its own money for the US dollar"), not as an afterthought the solver has to infer.
+
+The test: could a careful solver read the stem two ways and pick a different true answer under each? If yes, the metric isn't named tightly enough yet.
+
 ### No giveaways
 
 Don't hand the solver the answer or the path to it. Keep out of the stem: source names, dataset names, publication names, governing-body names, reference-work names (unless the source itself is the answer subject); and the runner-up, predecessor, overtaken record-holder, or obvious comparator. Avoid "who overtook X," "ahead of Y," "according to Z," "unlike X," "beating the previous record of Y." Those details belong in the Follow-on.
@@ -157,7 +167,7 @@ Open with a compact **Plan** block (the dimensions and archetypes covered, plus 
    Source: [source name(s) with citations, directly attached to the claim]
 ```
 
-- **Why it's interesting** must carry at least one exact number, rank, margin, rate, date, or comparison.
+- **Why it's interesting** must carry at least one exact number, rank, margin, rate, date, or comparison. This field is doing real work, not decoration: the discriminating figure the player *reasoned toward but couldn't pin down* (how many languages, how many centuries, what share of GDP) is the payoff — the reveal is where the game quietly teaches the memorable fact. So the number kept out of the stem must land here as the "aha," stated exactly.
 - **Follow-on** must add a real comparative detail with a quantified element.
 
 ## Rendering as an interactive HTML field guide
@@ -201,5 +211,6 @@ Before delivering, confirm:
 - [ ] The set is **not clustered** by source, source type, era, geography, answer, statistic, dimension, or archetype; first five vary on five different dimensions; each question differs from the previous 3–5.
 - [ ] Upward superlatives don't dominate; several questions use **filters/thresholds** and several are **bottom-end/inverted**.
 - [ ] No **warhorses** (largest landlocked, longest coastline, smallest country, city-on-two-continents, etc.) and no stem leaking the answer's own discriminating figure; any filter is one a player would naturally reason with, not a carve-out.
+- [ ] Every superlative **names its metric** (no bare "oldest/largest/leans hardest"); plain wording stays unambiguous; any trivially-correct insider is excluded by natural framing — no stem can be read two ways to two different true answers.
 - [ ] Contested-definition answers are flagged.
 - [ ] Every Follow-on adds a useful quantified comparison.

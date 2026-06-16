@@ -184,6 +184,8 @@ Technical and precise vocabulary stays out of the stem but is **free** in the An
 
 **Hard rule (load-bearing):** if plain wording makes the question ambiguous or changes the correct answer, restore the precise wording. Accuracy outranks reading level. Simpler words are usually *less* precise, so this trade-off is common — when it appears, precision wins, and gate step 3 is the check that catches it.
 
+**The _answer_ and category labels must use the audience's word too — beware insider terms that collide with a common word.** Name the answer the way a normal person would, not the way the domain does. The Olympic sport officially called "athletics" reads to most people as "all sports" ("aren't all sports athletics?") — write **"track and field."** Same trap: "football" (soccer vs. NFL), "corn" (maize vs. any grain), "billion" (US vs. long-scale), "public school" (UK vs. US). When the insider label is ambiguous or misleading to the player, use the common name and put the technical term in the explanation fields.
+
 ### Multiple topics / "more"
 
 For multiple topics, distribute questions evenly and assign any remainder fairly. When the user asks for "more," generate fresh questions and avoid repeating earlier questions, answer subjects, archetypes, and sources from the conversation.

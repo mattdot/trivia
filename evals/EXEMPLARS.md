@@ -24,3 +24,16 @@ Each entry notes the *rule* it teaches so the pattern transfers off-topic.
 - **Hint in the stem** — "broke away *in 2011*" (South Sudan), "*over a quarter-million* islands" (Sweden). *Rule:* never state the answer's own discriminating figure; the player matches the number instead of reasoning to it. Name the *category* ("world's newest nation"), not the value.
 - **Gerrymandered filter** — "highest GDP per person *among countries big enough to rank*" (Luxembourg). Rated "arbitrary." *Rule:* the qualifier exists only to fence out Monaco, and the seam shows. If the clean answer is a technicality you must exclude, the dimension is wrong — pick another.
 - **Mangled inversion wording** — the "lowest high point" stem (Maldives) was rated "worded incorrectly for this style." *Rule:* inversions need clean phrasing — "which country's highest point is the lowest in the world?" — not a clause pile-up.
+
+## Gold (batch 2)
+
+- **Off-register dimension** — "most coffee drunk per person" → Finland. Rated "finally an interesting dimension that isn't geography or demographics… would love more variety like this." *Rule:* the dimension that breaks the topic's default register is the one players find refreshing. Seed several per set.
+- **Seen-but-can't-recall** — "only country in all four hemispheres" → Kiribati. Rated "I've seen this but can never remember the country." *Rule:* this is the sweet spot, not a flaw — the answer resists memorization, so reasoning still pays.
+- **Largest country the Equator runs through** → Brazil; **most populous country whose capital isn't its largest city** → China; **fewest people per square mile** → Mongolia; **smallest country on the African mainland** → The Gambia. *Rule:* re-sliced / bottom-end records on natural filters that leave close finalists.
+
+## Anti-patterns (batch 2)
+
+- **Decorative filter (no competition)** — "most populous country that drives on the left" → India. Rated "not sure it'd throw many off India." *Rule:* a filter that narrows to the obvious giant isn't doing work; leave 2–4 contenders genuinely hard to rank, or the filter is just decoration.
+- **Revealing set cardinality** — "the *only two* doubly-landlocked countries, which is larger?" Rated "why are we giving away that there are two?" *Rule:* the count is a clue; state the property, not how many qualify.
+- **Unspecified metric on a superlative** — same item, "how are we measuring largest?" *Rule:* when "largest/biggest" could mean area or population, say which.
+- **Named-comparator boundary** — "more first-language Spanish speakers than *Spain* itself" → Mexico. Rated "giving away that it's not Spain." *Rule:* "more than [named X]" eliminates X for the solver; drop the named comparison.

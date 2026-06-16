@@ -29,9 +29,13 @@ Answer spaces fall into three tiers. Steer toward the top:
 
 - **Enumerable (ideal):** the solver can mentally walk the whole list.
 - **Bounded but large (workable only if the conditions prune hard):** Fortune 500, capital cities, sitting heads of state. Use only when the filters cut the field to a few.
-- **Effectively unbounded (red flag):** "which CEO," "which scientist," "which song," "which battle," "which painting." There is no list to reason over, so the only path to the answer is to have memorized it. Rework or drop these.
+- **Effectively unbounded (red flag):** "which CEO," "which scientist," "which song," "which battle," "which painting," **"which animal."** There is no list to reason over, so the only path to the answer is to have memorized it. Rework or drop these.
 
-When you catch yourself writing a question whose answer is a single un-listable thing, that is the signal the question is memorization, not reasoning. Fix it by changing the answer set (e.g., not "which scientist won X" but "which *country* has produced the most X winners") or drop it.
+**Boundedness is checked first, and a rich dimension cannot rescue an unbounded answer space.** This is the easiest gate to skip, because objectively-measurable dimensions are seductive: "fastest / loudest / strongest-biting / longest-lived animal" are all crisp, verifiable, reflex-defeating superlatives — and every one is *recall*, because the solver cannot enumerate the animal kingdom to reason over it. A perfect dimension on an unbounded set is still traditional trivia. Natural-kingdom topics (animals, plants, insects, dinosaurs), and any "which [song/film/battle/person]," are unbounded by default. Judge the *answer set's walkability* before you fall in love with the axis.
+
+Two fixes when you catch an unbounded answer:
+- **Change the answer set** so the answer is itself enumerable — not "which scientist won X" but "which *country* has produced the most X winners."
+- **Bound to an enumerable named subset** the solver can hold in mind — keep the animal/song/battle kind, but restrict the field: not "loudest animal" but "loudest of the **great apes**"; not "strongest bite" but "hardest-biting of the world's **big cats**" (jaguar, over a walkable set of seven); not "deadliest animal" but "most dangerous of **Africa's Big Five**." The same move tames any unbounded topic — one band's discography, a single Olympics' host-city shortlist, WWII's major battles, one year's Nobel laureates. Once the solver can recite the candidates, the prune-and-bet mechanic is back.
 
 ## Workflow
 
@@ -228,7 +232,7 @@ The skill still governs *how* questions are built (reasoning-driven, ≥75% uniq
 
 Before delivering, confirm:
 
-- [ ] Every answer is drawn from a **listable set** (gate step 1); none rely on an unbounded answer space.
+- [ ] Every answer is drawn from a **listable set the solver can actually enumerate** (gate step 1) — not just well-posed, but *walkable*; no unbounded "which animal/song/battle/person" space hiding behind a crisp dimension. If unbounded, it's bounded to a named subset.
 - [ ] Every question is **guessable by reasoning** (gate step 5): a reasoner can prune to ≈2–4 finalists and place a defensible bet — neither pure recall nor a forced deduction.
 - [ ] Every stem is **well-posed** (gate step 3): exactly one *correct* answer in reality; no genuine ambiguity from plain wording, a tie, or a fair alternate definition. Solver uncertainty among the finalists is intended, not a defect.
 - [ ] Stems read at ~6th-grade level; precise terms confined to the explanation fields; precision restored wherever plain wording would mislead.

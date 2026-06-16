@@ -1,0 +1,34 @@
+{
+  "batch_id": "2026-06-16-animals-batch1",
+  "topic": "Animals (record-holders)",
+  "purpose": "Stress-test #3. Animals chosen as the richest test of the tuned rules: genuinely orthogonal, OBJECTIVELY-measurable axes (mph, PSI, LD50, dB, years, grams), dense reflex-defeaters, and a clean listable answer set (famous species) that forces answer-kind consistency. Tests whether the skill keeps the set off the obvious size/danger clusters. Every contested superlative web-verified. NOT filed to the library.",
+  "created": "2026-06-16",
+  "cluster_audit": {
+    "Speed/locomotion": ["peregrine falcon"],
+    "Danger/mortality": ["mosquito", "inland taipan"],
+    "Strength": ["saltwater crocodile"],
+    "Longevity": ["Greenland shark"],
+    "Body size": ["Etruscan shrew"],
+    "Sound": ["sperm whale"],
+    "Anatomy": ["millipede"],
+    "Movement/migration": ["Arctic tern"],
+    "Reproduction": ["ocean sunfish"],
+    "Habitat extreme": ["Rüppell's vulture"],
+    "Population": ["domestic chicken"],
+    "verdict": "12 questions, largest cluster = 2/12 (17%, danger). All answers are species (answer-kind consistent). Every dimension anchored to an objective measure."
+  },
+  "candidates": [
+    {"n": 1, "dimension": "top speed (mph)", "archetype": "reflex-defeater", "q": "Which animal moves faster than any other — reaching its top speed in a steep dive?", "answer": "Peregrine falcon", "note": "~240 mph in a stoop. Head fake: the cheetah (~70 mph) is only the fastest on land; the 'in a dive' clause is the tell. Finalists peregrine falcon, cheetah, sailfish, golden eagle."},
+    {"n": 2, "dimension": "human deaths per year (mortality)", "archetype": "reflex-defeater", "q": "Which animal is responsible for more human deaths each year than any other?", "answer": "Mosquito", "note": "~600,000-1,000,000/yr via malaria, dengue, etc. Classic head fake: the mind reaches for sharks, snakes, big cats. Finalists mosquito, snake, dog (rabies), human."},
+    {"n": 3, "dimension": "bite force (PSI)", "archetype": "reflex-defeater", "q": "Which living animal can clamp its jaws shut with more force than any other?", "answer": "Saltwater crocodile", "note": "~3,700 PSI measured (Erickson 2012) vs hippo ~1,800, great white less. Finalists saltwater crocodile, hippo, great white shark, jaguar."},
+    {"n": 4, "dimension": "venom toxicity (LD50)", "archetype": "reflex-defeater", "q": "Drop for drop, which snake carries the most toxic venom of all?", "answer": "Inland taipan", "note": "Lowest LD50 of any snake. Reveal nuance (and head fake vs #2): it's shy and almost never kills people — most toxic is not most deadly. Finalists inland taipan, black mamba, king cobra, Russell's viper."},
+    {"n": 5, "dimension": "lifespan (years)", "archetype": "max", "q": "Which backboned animal lives longer than any other?", "answer": "Greenland shark", "note": "~272-400 yrs (radiocarbon eye-lens dating); next is the bowhead whale at ~211. Metric pinned to 'backboned' since some clams/jellyfish go further. Finalists Greenland shark, bowhead whale, giant tortoise, koi."},
+    {"n": 6, "dimension": "body mass (smallest)", "archetype": "bottom-end", "q": "Which mammal weighs less than any other?", "answer": "Etruscan shrew (~1.8 g)", "note": "Lighter than a penny. Flag: the bumblebee bat is the smallest by body length/skull — metric pinned to weight. Finalists Etruscan shrew, bumblebee bat, pygmy mouse."},
+    {"n": 7, "dimension": "loudness (decibels)", "archetype": "reflex-defeater", "q": "Which animal makes a louder sound than any other on Earth?", "answer": "Sperm whale", "note": "Echolocation clicks ~230 dB underwater; pistol shrimp ~189, blue whale ~188. Defeats the lion/howler-monkey reflex. Finalists sperm whale, pistol shrimp, blue whale, howler monkey."},
+    {"n": 8, "dimension": "number of legs", "archetype": "max", "q": "Which animal has more legs than any other?", "answer": "Millipede (Eumillipes persephone)", "note": "1,306 legs — the first to truly out-leg its name (mille = thousand). Finalists millipede, centipede, caterpillar."},
+    {"n": 9, "dimension": "migration distance (km/yr)", "archetype": "max", "q": "Which animal travels the farthest in its yearly migration?", "answer": "Arctic tern", "note": "Pole to pole, ~70,000-90,000 km a year — it sees two summers and more daylight than any animal. Finalists Arctic tern, sooty shearwater, humpback whale, monarch butterfly."},
+    {"n": 10, "dimension": "fecundity (eggs)", "archetype": "surprising-max", "q": "Which backboned animal can release more eggs at once than any other?", "answer": "Ocean sunfish (mola mola)", "note": "Up to ~300 million eggs per spawning — the most fecund vertebrate. Finalists ocean sunfish, cod, sturgeon, sea turtle."},
+    {"n": 11, "dimension": "flight altitude", "archetype": "reflex-defeater", "q": "Which bird has been recorded flying higher than any other?", "answer": "Rüppell's griffon vulture", "note": "~37,000 ft — one struck an airliner there in 1973. Defeats the eagle/goose reflex (bar-headed goose is the high-altitude migrant, but lower). Finalists Rüppell's vulture, bar-headed goose, bald eagle, whooper swan."},
+    {"n": 12, "dimension": "population (most numerous)", "archetype": "reflex-defeater", "q": "Which bird outnumbers every other bird on the planet?", "answer": "Domestic chicken", "note": "~33 billion alive at any time. Flag/reveal: the red-billed quelea (~1.5 billion) is the most numerous WILD bird — a fair near-miss the reveal should credit. Finalists domestic chicken, red-billed quelea, house sparrow, pigeon."}
+  ]
+}

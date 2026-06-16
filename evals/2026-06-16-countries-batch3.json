@@ -1,0 +1,26 @@
+{
+  "batch_id": "2026-06-16-countries-batch3",
+  "topic": "Countries of the world",
+  "purpose": "Third human-eval batch. Deliberately weighted to OFF-REGISTER dimensions (consumption, sport, economy, culture, history, language) per batch-2 steer, not physical geography/demographics. Filters built to leave real competition; no cardinality reveals, no named comparators, metrics specified. NOT filed to the library.",
+  "created": "2026-06-16",
+  "rules_applied": [
+    "Off-register dimensions; cap per-capita-consumption at 2, spread across kinds.",
+    "Every filter leaves close finalists (no decorative filters that just relabel the obvious giant).",
+    "No set-size reveals, no named comparators, superlatives state their metric.",
+    "Reflex-defeaters preferred: the obvious first guess is the wrong one."
+  ],
+  "candidates": [
+    {"n": 1, "dimension": "beer consumption per person", "archetype": "per-capita reflex-defeater", "q": "People in which country drink more beer per person than anywhere else?", "answer": "Czechia", "note": "Defeats the Germany reflex; Czechia has led for decades. Finalists Czechia, Austria, Germany, Poland."},
+    {"n": 2, "dimension": "Olympic success", "archetype": "bottom-end filter", "q": "Which is the most populous country that has never won an Olympic medal of any kind?", "answer": "Bangladesh (~170M)", "note": "As of 2024. Next is Cambodia at ~16M — a tenth the size. Finalists Bangladesh, DR Congo, Myanmar, Nepal."},
+    {"n": 3, "dimension": "currency policy", "archetype": "filtered-max", "q": "Some countries have given up their own money and use the US dollar as their official currency. Which of them has the most people?", "answer": "Ecuador (~18M)", "note": "Ahead of El Salvador and Panama. Finalists Ecuador, El Salvador, Panama, Zimbabwe."},
+    {"n": 4, "dimension": "film production", "archetype": "reflex-defeater", "q": "Which country makes more feature-length films each year than any other?", "answer": "India", "note": "Defeats the Hollywood reflex; Nigeria (Nollywood) is the real #2. Finalists India, Nigeria, USA, China."},
+    {"n": 5, "dimension": "agricultural output (olive oil)", "archetype": "reflex-defeater", "q": "Which country produces more olive oil than any other?", "answer": "Spain", "note": "~45-50% of world output — defeats the Italy/Greece reflex. Finalists Spain, Italy, Greece, Tunisia."},
+    {"n": 6, "dimension": "monarchy age", "archetype": "surprising-historical", "q": "Which country has the world's oldest royal family still on the throne, going back many centuries unbroken?", "answer": "Japan", "note": "The Imperial House is the oldest continuous hereditary monarchy. Finalists Japan, Denmark, United Kingdom, Morocco."},
+    {"n": 7, "dimension": "vehicle exports", "archetype": "surprising-max", "q": "Which country now ships more cars abroad than any other, counted by number of vehicles?", "answer": "China", "note": "Overtook Japan in 2023 (4.91M vs 4.42M). Flag: recent, metric = units exported. Finalists China, Japan, Germany, South Korea."},
+    {"n": 8, "dimension": "political history", "archetype": "first-to", "q": "Which country was the first in the world to give women the right to vote in national elections?", "answer": "New Zealand (1893)", "note": "Finalists New Zealand, Australia, Finland, Norway."},
+    {"n": 9, "dimension": "tea consumption per person", "archetype": "per-capita reflex-defeater", "q": "People in which country drink more tea per person than anywhere else?", "answer": "Turkey", "note": "Defeats the UK/China reflex by a wide margin. Finalists Turkey, Ireland, United Kingdom, China."},
+    {"n": 10, "dimension": "linguistic diversity", "archetype": "surprising-max", "q": "Which country has more living languages spoken within its borders than any other?", "answer": "Papua New Guinea (~840)", "note": "World's most linguistically diverse. Finalists Papua New Guinea, Indonesia, Nigeria, India."},
+    {"n": 11, "dimension": "remittance dependence (% GDP)", "archetype": "surprising-max", "q": "Which country's economy leans on money sent home by workers abroad more than any other, as a share of everything it produces?", "answer": "Tajikistan (~48%)", "note": "Tonga (~41%) and Samoa are close. Flag: 2023 figures. Finalists Tajikistan, Tonga, Samoa, Lebanon."},
+    {"n": 12, "dimension": "financial history", "archetype": "oldest", "q": "Which country runs the world's oldest central bank still in operation today?", "answer": "Sweden", "note": "The Riksbank, founded 1668; the Bank of England (1694) is the close runner-up. Finalists Sweden, United Kingdom, Netherlands, France."}
+  ]
+}

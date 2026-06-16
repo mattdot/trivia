@@ -1,0 +1,112 @@
+{
+  "set_id": "2026-06-16-big-cats",
+  "topic": "Big cats",
+  "created": "2026-06-16",
+  "masthead": {
+    "eyebrow": "TRIVIA FIELD GUIDE",
+    "title_html": "Big Cats, <span class=\"num\">Placed</span>",
+    "title_plain": "Big Cats, Placed",
+    "dek": "Big cats are the subject — but every answer is something you can reason over and recite: a country, a continent, one of the cats themselves, even a simple count. Narrow the field, place your bet, then tap to check.",
+    "footer_html": "Seven questions across four enumerable answer sets — countries, continents, the cats themselves, and a count — sources noted per question."
+  },
+  "plan": {
+    "dimensions": ["tiger population by country", "continent without native cats", "number of big cats that can roar", "daytime hunting (odd one out)", "lion population by country", "continent with most wild-cat species", "Amur leopard last stronghold"],
+    "archetypes": ["population-max", "absence", "count", "odd-one-out", "population-max", "diversity-max", "last-stronghold"],
+    "unique_ratio": 0.86,
+    "doubled": ["species population by country"],
+    "note": "Answer-routing design: the big cats are the SUBJECT, but each answer is drawn from an enumerable set the solver can walk — and the answer sets are deliberately varied (countries, continents, a U.S. state, a count) rather than locked on countries. This keeps an otherwise unbounded topic ('which animal...') fully guessable while staying fresh."
+  },
+  "questions": [
+    {
+      "id": "2026-06-16-big-cats-01",
+      "cat": "Geography · Tigers",
+      "dimension": "tiger population by country",
+      "archetype": "population-max",
+      "q": "Which country is home to more wild tigers than the rest of the world combined?",
+      "answer_subject": "India",
+      "state": "India",
+      "detail": "India holds over 70% of the world's wild tigers — about 3,680 of them in 2022.",
+      "why": "Decades of tiger reserves and anti-poaching patrols have pushed India's count back above 3,000 — more than every other tiger country put together.",
+      "more": "Russia's Far East is a distant second, with roughly 500–600 Siberian tigers.",
+      "source": "India National Tiger Estimation 2022 (~3,682 tigers; India holds >70% of the world's wild tigers)."
+    },
+    {
+      "id": "2026-06-16-big-cats-02",
+      "cat": "Geography · Native range",
+      "dimension": "continent without native cats",
+      "archetype": "absence",
+      "q": "Wild cats are native to every inhabited continent but one. Which inhabited continent has none of its own?",
+      "answer_subject": "Australia",
+      "state": "Australia",
+      "detail": "Australia has no native cats at all; every wild cat there today descends from animals brought by settlers.",
+      "why": "Australia split off as its own landmass before cats spread around the globe, so pouched marsupials evolved to fill the hunter's role instead.",
+      "more": "Antarctica has no cats either, but it has no native land mammals of any kind.",
+      "source": "Zoogeography of Felidae — native to every continent except Australia and Antarctica."
+    },
+    {
+      "id": "2026-06-16-big-cats-03",
+      "cat": "Biology · Roaring",
+      "dimension": "number of big cats that can roar",
+      "archetype": "count",
+      "q": "Of all the big cats, only some can let out a true roar. How many can?",
+      "answer_subject": "Four",
+      "state": "Four",
+      "detail": "Four: the lion, tiger, leopard, and jaguar.",
+      "why": "A special stretchy ligament in the voice box gives these four their roar; the cheetah, cougar, and even the snow leopard lack it and purr or chirp instead.",
+      "more": "The snow leopard is a close cousin of the four roarers, but still can't manage a full roar.",
+      "source": "Felid vocal anatomy: the four roaring cats are lion, tiger, leopard, and jaguar."
+    },
+    {
+      "id": "2026-06-16-big-cats-04",
+      "cat": "Behavior · Hunting time",
+      "dimension": "daytime hunting (odd one out)",
+      "archetype": "odd-one-out",
+      "q": "Most big cats hunt under cover of darkness. Which one is the odd one out, doing most of its hunting in broad daylight?",
+      "answer_subject": "Cheetah",
+      "state": "Cheetah",
+      "detail": "The cheetah — it hunts mainly by day, especially mid-morning and late afternoon.",
+      "why": "Hunting in daylight lets the cheetah use its eyesight and blistering speed, and keeps it clear of the bigger night-hunters — lions and hyenas — that would happily steal its kill or kill its cubs.",
+      "more": "The other big cats lean on stealth in low light, where their night vision gives them the edge.",
+      "source": "Smithsonian's National Zoo; Cheetah Conservation Fund (cheetahs are primarily diurnal hunters)."
+    },
+    {
+      "id": "2026-06-16-big-cats-05",
+      "cat": "Geography · Lions",
+      "dimension": "lion population by country",
+      "archetype": "population-max",
+      "q": "Which country has more wild lions than any other?",
+      "answer_subject": "Tanzania",
+      "state": "Tanzania",
+      "detail": "Tanzania is home to roughly 14,500 lions — more than a third of all that remain.",
+      "why": "Vast protected lands like the Serengeti and Ruaha hold the biggest lion populations left on Earth.",
+      "more": "Most people guess South Africa or Kenya, but Tanzania is well out in front.",
+      "source": "WildAid (Tanzania's wild lion population ~14,500, the largest of any country)."
+    },
+    {
+      "id": "2026-06-16-big-cats-06",
+      "cat": "Geography · Cat diversity",
+      "dimension": "continent with most wild-cat species",
+      "archetype": "diversity-max",
+      "q": "On which continent do more kinds of wild cat live than anywhere else?",
+      "answer_subject": "Asia",
+      "state": "Asia",
+      "detail": "Asia has the richest variety of wild cats — tigers, leopards, snow leopards, clouded leopards, and a long list of smaller forest cats.",
+      "why": "Its sweep of habitats, from steamy jungle to high cold mountains, gives more cat species room than any other continent.",
+      "more": "Africa is famous for its big cats, but counting every species — big and small — Asia comes out ahead.",
+      "source": "Wildcat Family and National Geographic species lists (Asia has the most wild cat species of any continent)."
+    },
+    {
+      "id": "2026-06-16-big-cats-07",
+      "cat": "Geography · Rarest cat",
+      "dimension": "Amur leopard last stronghold",
+      "archetype": "last-stronghold",
+      "q": "The world's rarest big cat hangs on in the snowy forests of just one country's far east. Which country?",
+      "answer_subject": "Russia",
+      "state": "Russia",
+      "detail": "The Amur leopard — only about 100–130 left in the wild — survives mainly in Primorye, in Russia's Far East.",
+      "why": "It's the only leopard built for deep snow; a national park on the Russia–China border helped it recover from fewer than 30 animals in 2007.",
+      "more": "A few now slip across into neighboring China, the only other place it still roams.",
+      "source": "WWF; Land of the Leopard National Park (Amur leopard ~100–130, mainly SW Primorye, Russia)."
+    }
+  ]
+}

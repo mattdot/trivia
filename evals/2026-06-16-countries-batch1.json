@@ -1,0 +1,23 @@
+{
+  "batch_id": "2026-06-16-countries-batch1",
+  "topic": "Countries of the world",
+  "purpose": "Human-eval candidate batch — NOT filed to the library. Span many dimensions/archetypes on one topic so feedback targets question *form*. Rate freely; verdicts feed SKILL.md rules + an exemplar bank.",
+  "created": "2026-06-16",
+  "candidates": [
+    {"n": 1, "dimension": "area (landlocked)", "archetype": "filtered-max", "q": "Which country with no coastline at all is the largest by land?", "answer": "Kazakhstan", "note": "~2.7M km²; finalists Kazakhstan, Mongolia, Chad, Niger."},
+    {"n": 2, "dimension": "time zones", "archetype": "surprising-max", "q": "Counting all its overseas lands, which country touches the most time zones?", "answer": "France (12)", "note": "Beats Russia & USA (11 each) thanks to territories like French Polynesia, Réunion, French Guiana."},
+    {"n": 3, "dimension": "population (no land borders)", "archetype": "filtered-max", "q": "Which country that shares no land border with any neighbor has the most people?", "answer": "Japan (~124M)", "note": "Filter knocks out mainland giants; finalists Japan, Philippines, UK, Madagascar."},
+    {"n": 4, "dimension": "coastline length", "archetype": "max", "q": "Which country has the longest coastline in the world?", "answer": "Canada", "note": "~202,000 km, far ahead; finalists Canada, Indonesia, Russia, Norway."},
+    {"n": 5, "dimension": "highest point (lowest)", "archetype": "bottom-end", "q": "In which country is the highest natural ground still barely above the sea — the lowest 'high point' of any nation?", "answer": "Maldives (~2.4 m)", "note": "World's flattest country, averaging ~1.5 m; finalists Maldives, Tuvalu, Kiribati."},
+    {"n": 6, "dimension": "independence date", "archetype": "most-recent", "q": "Which country became the world's newest widely recognized nation, breaking away in 2011?", "answer": "South Sudan", "note": "Finalists South Sudan, Montenegro (2006), Kosovo (2008), East Timor (2002)."},
+    {"n": 7, "dimension": "capital elevation", "archetype": "max", "q": "Which country's main seat of government sits higher up a mountainside than any other capital?", "answer": "Bolivia (La Paz, ~3,640 m)", "note": "Contested: La Paz is the de-facto capital; Sucre is constitutional. Finalists La Paz, Quito, Bogotá, Thimphu."},
+    {"n": 8, "dimension": "area (smallest UN member)", "archetype": "bottom-end + filter", "q": "Of all the countries with a seat at the United Nations, which covers the least land?", "answer": "Monaco (~2.08 km²)", "note": "Filter excludes Vatican City (not a UN member). Finalists Monaco, Nauru, Tuvalu, San Marino."},
+    {"n": 9, "dimension": "ancient monuments", "archetype": "surprising-max", "q": "Which country has more ancient pyramids than any other?", "answer": "Sudan (~200–250)", "note": "More than double Egypt's ~138, built by the Kingdom of Kush. Finalists Sudan, Egypt, Mexico."},
+    {"n": 10, "dimension": "capital latitude", "archetype": "extreme-north", "q": "Which country has the northernmost capital city of any independent nation?", "answer": "Iceland (Reykjavík, ~64°N)", "note": "Finalists Reykjavík, Helsinki, Oslo, Tallinn."},
+    {"n": 11, "dimension": "GDP per person", "archetype": "per-capita-max", "q": "Among countries big enough to make the main economic rankings, which produces the most wealth per person?", "answer": "Luxembourg", "note": "Tiny Monaco/Liechtenstein rank higher but are often excluded from IMF lists. Finalists Luxembourg, Ireland, Switzerland, Norway."},
+    {"n": 12, "dimension": "transcontinental geography", "archetype": "identity", "q": "Which country's largest city sits partly in Europe and partly in Asia, split by a narrow strait?", "answer": "Turkey (Istanbul)", "note": "Finalists Turkey, Russia, Egypt, Kazakhstan."},
+    {"n": 13, "dimension": "island count", "archetype": "surprising-max", "q": "Which country has the most islands — over a quarter of a million of them?", "answer": "Sweden (~267,570)", "note": "Glaciation-carved skerries; Norway ~239,000 is close. Contested by counting method. Finalists Sweden, Norway, Finland, Canada."},
+    {"n": 14, "dimension": "borders (enclaved)", "archetype": "filtered-max", "q": "Which is the largest country that is completely surrounded by just one other country?", "answer": "Lesotho", "note": "Encircled by South Africa; San Marino & Vatican are also enclaved but tiny. Finalists Lesotho, San Marino, Vatican."},
+    {"n": 15, "dimension": "population (smallest UN member)", "archetype": "bottom-end + filter", "q": "Which United Nations member country has the fewest people of all?", "answer": "Tuvalu (~11,000)", "note": "Finalists Tuvalu, Nauru, Palau, San Marino."}
+  ]
+}

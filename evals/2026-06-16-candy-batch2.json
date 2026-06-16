@@ -1,0 +1,24 @@
+{
+  "batch_id": "2026-06-16-candy-batch2",
+  "topic": "Candy & confectionery",
+  "purpose": "Breaking the sales-lock. Batch 1 looked diverse but every dimension clustered into 'commercial scale' (sales/revenue/exports/consumption/production). This redo bans commercial dimensions entirely and mines candy's non-money axes: physical structure, sensory extremes, ingredients/chemistry, design, history. Demonstrates the explicit cluster-check method. Every fact web-verified. NOT filed to the library.",
+  "created": "2026-06-16",
+  "cluster_audit": {
+    "Physical structure": ["3 Musketeers (density)", "jawbreaker (dissolve time)"],
+    "Sensory extreme": ["Toxic Waste (sourness)"],
+    "Ingredient / chemistry": ["dark chocolate (caffeine)"],
+    "Design / product": ["Jelly Belly (flavour count)"],
+    "History": ["Good & Plenty (brand age)"],
+    "Commercial scale": [],
+    "verdict": "7 questions, largest cluster = 2/7 (29%), zero commercial. Honest finding: candy's verifiable non-commercial rankings are genuinely thin — this is near the ceiling, not a cherry-picked 7 of 20."
+  },
+  "candidates": [
+    {"n": 1, "dimension": "density / aeration (physical)", "archetype": "reflex-defeater", "q": "Which classic chocolate bar is the lightest for its size, because its middle is whipped full of air?", "answer": "3 Musketeers", "note": "Whipped nougat centre, ~45% less fat than the average bar — low enough density it nearly floats. Finalists 3 Musketeers, Milky Way, Snickers, Mars bar."},
+    {"n": 2, "dimension": "dissolve time (physical)", "archetype": "max", "q": "Which kind of hard candy is built to last longest in your mouth before it dissolves?", "answer": "Jawbreakers (e.g. Everlasting Gobstoppers)", "note": "Concentric hard-sugar layers each dissolve at a different rate, stretching it out for an hour-plus on the big ones. Finalists jawbreaker, lollipop, Life Savers, butterscotch disc."},
+    {"n": 3, "dimension": "sourness (sensory)", "archetype": "surprising-max", "q": "Which widely-sold candy is the most mouth-puckeringly sour of them all?", "answer": "Toxic Waste", "note": "CONTESTED, reveal teaches it: Toxic Waste has held the popular 'world's sourest' title for ~20 years, driving mouth pH below 2 (about stomach-acid territory); Warheads is a clear notch milder; the UK's Barnett's Mega Sour (pH ~1.6) is cited as technically sourer but is far more obscure. A guesser who said Warheads learns they picked the famous one, not the fiercest. Finalists Toxic Waste, Warheads, Barnett's Mega Sour."},
+    {"n": 4, "dimension": "caffeine content (ingredient/chemistry)", "archetype": "reflex-defeater", "q": "Setting aside candies made with coffee, which ordinary sweet carries the most caffeine?", "answer": "Dark chocolate", "note": "Cocoa solids contain caffeine, so the darker the chocolate the more it has (~12 mg/oz for dark vs little in milk, none in white). Defeats the 'candy has no caffeine' assumption. Finalists dark chocolate, milk chocolate, white chocolate."},
+    {"n": 5, "dimension": "flavour range (design)", "archetype": "max", "q": "Which jelly-bean brand makes its name on offering far more distinct flavours than any rival?", "answer": "Jelly Belly", "note": "An official permanent lineup of 50 flavours, built from 23 real fruit juices and purees, plus rotating limited editions. Finalists Jelly Belly, Brach's, Starburst, Skittles."},
+    {"n": 6, "dimension": "brand age (history)", "archetype": "oldest", "q": "Which candy brand has been made without interruption in America longer than any other?", "answer": "Good & Plenty (since 1893)", "note": "CONTESTED, reveal teaches it: Necco Wafers date to 1847 — older — but went out of production 2018-2020, breaking the chain; that's why the metric is 'without interruption.' A guesser who said Necco learns the gap is the whole point. Finalists Good & Plenty, Necco Wafers, Tootsie Roll, Hershey bar."},
+    {"n": 7, "dimension": "shape / structure (physical-design)", "archetype": "reflex-defeater", "q": "Which everyday chocolate is moulded so that you snap off a row of identical triangular peaks?", "answer": "Toblerone", "note": "Borderline-identity, included to test the line: there IS light reasoning (triangular-prism chocolates are a tiny set), but it leans recognizable. Flag for your read on whether this is a bet or a giveaway. Finalists Toblerone, Ritter Sport (square), Hershey bar (rectangles)."}
+  ]
+}

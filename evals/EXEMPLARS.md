@@ -76,3 +76,13 @@ The fix for the spec-sheet trap overshot into pure recall. Almost everything off
 - **Breaking out** — candy's non-commercial rankings: density (3 Musketeers), dissolve time (jawbreaker), sourness (Toxic Waste), caffeine (dark chocolate), flavour count (Jelly Belly), brand age (Good & Plenty). *Rule:* mine ingredients/physical/sensory/design/history. And the honest limit: these are *thin* — that scarcity is itself the finding, not a reason to pad with sales.
 - **Anti — per-topic warhorse.** "Holiday that sells most candy" → Halloween, rated "way too obvious."
 - **Contested answers are fine IF the reveal teaches the contest.** User: "contested answers are fine as long as the reveal includes enough about the contested issue to answer the questions of someone who guessed the contested answer." *Rule:* the Follow-on must vindicate the near-miss (name the rival, the figures, why sources split) — now a rule + checklist item.
+
+## Batch 7 (candy, sales-lock removed)
+
+The lock broke where the question stayed a real ranking; it failed where it slid into recognition.
+
+- **Gold** — least-dense bar (3 Musketeers, "pretty good"); brand age w/ contested reveal (Good & Plenty, "good variety… interested to learn why others were interrupted"). The contested-reveal approach is actively wanted.
+- **Anti — recognition, not a bet.** Jawbreaker-lasts-longest ("no") and Toblerone-triangular-peaks ("this is looking for a specific answer"). *Rule:* identity/recognition still fails even when the dimension is "physical."
+- **Anchor subjective axes to a measure.** Sourest → "could this have been measured with pH?" *Rule:* rank sensory qualities on the objective quantity underneath (pH, Scoville, sugar, mg); it's well-posed and often settles the contest.
+- **Answer-kind consistency.** Caffeine angle "good" but "dark chocolate" a "bad answer since we're generally thinking candy brands in this genre." *Rule:* a generic type where the set primed brands reads as a dodge; hold answer kind constant.
+- **Don't over-narrow the stem.** "Which jelly-bean brand has the most flavours" → user wanted "candy with the most flavors." *Rule:* over-specifying the category telegraphs and shrinks the field.

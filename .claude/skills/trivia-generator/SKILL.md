@@ -131,6 +131,14 @@ Many rankings flip under a reasonable change of definition (longest river; large
 
 A flagged-contested question is **acceptable** — sometimes the best questions live here — *on one condition: the reveal must satisfy the player who picked the other defensible answer.* If liquorice-per-person could be Finland or the Netherlands, the Follow-on names both, gives the figures, and explains why sources split (per-capita vs total, salty vs sweet). The player who said "Netherlands" should come away understanding they weren't wrong so much as reading a different metric — not feeling cheated. A contested answer with a bare reveal is a broken question; a contested answer whose reveal *teaches the contest* is a rich one.
 
+### Anchor subjective axes to an objective measure
+
+When a dimension sounds subjective — sourest, spiciest, sweetest, strongest, smelliest — find the **measurable quantity underneath it** and rank on that: sourness → pH, heat → Scoville units, sweetness → sugar content, caffeine → mg. "Which candy is most sour?" invites a marketing-claim answer and an unresolvable argument; "which candy drives mouth pH the lowest?" is well-posed, verifiable, and often *settles* what looked contested. If no objective measure exists for the quality, the dimension probably can't carry a well-posed question — pick a different one.
+
+### Keep the answer set consistent in kind
+
+A set silently primes the solver for one *kind* of answer — for candy it's brands (Reese's, Skittles, Toblerone); for countries it's nations. An answer that's a different kind — a generic *type* ("dark chocolate") where every neighbour is a brand — reads as a dodge even when it's factually right, because the solver was reasoning over the wrong list. Decide the answer kind up front and hold to it: if the good version of a dimension only resolves to a generic category, either reframe it to land on a brand (and verify that brand really leads) or drop it. Relatedly, don't **over-narrow the stem's category** — "which *jelly-bean brand* has the most flavours" telegraphs and shrinks the field; "which *candy* has the most flavours" is the cleaner ranking with the same answer.
+
 ### Name the metric — and don't let plain words blur it
 
 A superlative without a stated measure is ambiguous, and the ambiguity is a defect even when the intended answer is clear to *you*. Three failure modes, all seen in play:

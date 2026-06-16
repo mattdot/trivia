@@ -6,7 +6,6 @@ rebuild the index. Refuses to overwrite an existing set file unless --force.
 
 Usage:
     python scripts/add_to_library.py my-draft.json
-    python scripts/add_to_library.py my-draft.json --allow-repeat-answers
 """
 
 import argparse
@@ -24,7 +23,6 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("candidate")
-    ap.add_argument("--allow-repeat-answers", action="store_true")
     ap.add_argument("--force", action="store_true",
                     help="overwrite an existing set file with the same id")
     args = ap.parse_args()
@@ -33,11 +31,8 @@ def main():
     set_id = data.get("set_id")
 
     # Run the same uniqueness check the user would run by hand.
-    check_argv = [args.candidate]
-    if args.allow_repeat_answers:
-        check_argv.append("--allow-repeat-answers")
     saved = sys.argv
-    sys.argv = ["check_uniqueness.py"] + check_argv
+    sys.argv = ["check_uniqueness.py", args.candidate]
     try:
         rc = check_uniqueness.main()
     finally:

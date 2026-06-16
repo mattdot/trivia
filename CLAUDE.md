@@ -1,8 +1,11 @@
 # CLAUDE.md
 
 This repo is a growing **trivia library** plus the generator that fills it. The
-goal is reasoning-driven questions and a guarantee that **no question or answer
-is ever reused across games.**
+goal is reasoning-driven questions and a guarantee that **no question is ever
+reused across games.** Answers *may* repeat across games — the same answer in a
+different question is fine — they just can't dominate one run: **no single answer
+may exceed ~8% of a session** (so a 20-question run is effectively all-distinct
+answers).
 
 ## How questions are made
 
@@ -28,8 +31,10 @@ generate trivia here, follow this loop:
    described in `library/README.md`. Every question needs a normalized
    `dimension` and `answer_subject` — those are what dedup fingerprints.
 3. **Check it:** `python scripts/check_uniqueness.py <path>.json`
-   Non-zero exit = a hard collision (a repeated question stem or a reused answer).
-   Regenerate only the colliding questions, then re-check until clean.
+   Non-zero exit = a hard collision (a repeated **question** stem against the
+   library or within the set, or a single answer used more than ~8% of the run).
+   Reusing an answer that appears in another set is fine. Regenerate only the
+   colliding questions, then re-check until clean.
 4. **File it:** `python scripts/add_to_library.py <path>.json`
    (re-runs the check, then rebuilds `library/index.jsonl` and `library/INDEX.md`).
 5. **Render it:** `python scripts/render.py <path>.json` → playable HTML in

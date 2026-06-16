@@ -50,3 +50,11 @@ Each entry notes the *rule* it teaches so the pattern transfers off-topic.
 - **Trivially-correct insider** — "most populous country that uses the US dollar as its official currency" is literally the USA. *Rule:* frame the set so the obvious insider falls out naturally ("a country that gave up its own money for the dollar"), not by unstated assumption.
 - **Unspecified measure** — "oldest royal family." Rated "are we talking how old they are now or length of the dynasty?" *Rule:* name the measure ("going back the most centuries unbroken") — but without tipping the answer's type.
 - **Gloss gone vague** — "leans on remittances… as a share of everything it produces." Rated "is that household income?" *Rule:* when a 6th-grade gloss stops pinning the metric, precision wins — say "share of its whole economy (GDP)."
+
+## Batch 4 (chemical elements) — generalization test
+
+- **Gold (surprising-but-true)** — "most of Earth's crust" → Oxygen, rated "so surprising I want you to double-check it… I genuinely learned something." *Rule:* a true fact that overturns the obvious guess (oxygen is locked in silicate rock) is the best kind; verify it and let the reveal teach.
+- **Gold (reflex-defeaters carry across domains)** — best conductor → Silver ("it's not gold?"); priciest metal → Rhodium. *Rule:* the science register is full of "obvious answer is wrong" hooks; they transferred fine.
+- **Anti — the spec-sheet trap (the big one).** Rated "everything seems like a physical property… need more diversity in the dimensions." *Rule:* twelve different *properties* (density, thermal, conductivity, magnetism, reactivity) are still one *category*. Topics with a stat table (elements, planets, cars) seduce you into mining only it; force orthogonal categories — discovery history, etymology, human use, biology, culture.
+- **Anti — iconic-use hint.** "lighter-than-air gas used to fill *floating balloons*" → Helium, rated "balloon gas feels like a hint hiding in the question." *Rule:* don't name the answer's most famous use/nickname; describe a property the solver must test.
+- **Anti — per-topic warhorses.** Mercury-is-the-liquid-metal ("obvious"), nitrogen-is-most-of-air ("common"), diamond-is-hardest ("common"). *Rule:* every topic has its own chestnuts; the freshness rule is topic-relative.

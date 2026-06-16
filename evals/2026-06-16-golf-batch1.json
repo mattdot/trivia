@@ -1,0 +1,26 @@
+{
+  "batch_id": "2026-06-16-golf-batch1",
+  "topic": "Golf",
+  "purpose": "Apply the full ruleset to golf, showcasing the answer-set toolkit. Golf offers an unusually clean bounded set (the four majors) plus countries, scoring terms, the small career-Grand-Slam club, continents, and counts. Deliberately ROTATE answer sets rather than lock on one; lean on reflex-defeaters; avoid the Nicklaus-18 / Tiger-most warhorses. Candidate batch — not yet filed.",
+  "created": "2026-06-16",
+  "answer_set_audit": {
+    "the four majors": ["The Open Championship", "The Masters", "PGA Championship"],
+    "career Grand Slam winners (now 6)": ["Tiger Woods", "Gene Sarazen"],
+    "a count": ["14"],
+    "scoring terms": ["Albatross"],
+    "continents/teams": ["Europe"],
+    "countries": ["Scotland"],
+    "verdict": "9 questions across 6 enumerable answer sets; largest set = the four majors at 3/9 (33%). No 'which golfer' unbounded space."
+  },
+  "candidates": [
+    {"n": 1, "dimension": "founding date", "archetype": "oldest", "answer_set": "the four majors", "q": "Which of golf's four majors is the oldest, first played back in the 1800s?", "answer": "The Open Championship", "note": "1860 — the oldest of the four (and the oldest tournament in golf). Reflex-defeater vs the US Open / Masters. Finalists: the four majors."},
+    {"n": 2, "dimension": "founding date", "archetype": "newest", "answer_set": "the four majors", "q": "Which of the four majors is actually the youngest — the last one created?", "answer": "The Masters", "note": "1934. The big surprise: the Masters feels the most storied, but it's the newest major (Open 1860, US Open 1895, PGA 1916, Masters 1934). Strong reflex-defeater."},
+    {"n": 3, "dimension": "field composition", "archetype": "distinctive", "answer_set": "the four majors", "q": "Three of the majors invite top amateurs to play. Which one is for professionals only?", "answer": "PGA Championship", "note": "The only all-professional major; winner takes the Wanamaker Trophy. Finalists: the four majors."},
+    {"n": 4, "dimension": "career Grand Slam age", "archetype": "youngest", "answer_set": "career Grand Slam winners", "q": "Six men have won all four majors over a career. Which did it at the youngest age?", "answer": "Tiger Woods", "note": "Completed it at 24 (2000-01). Reflex-defeater vs Nicklaus. Bounded set: Sarazen, Hogan, Player, Nicklaus, Woods, McIlroy (2025)."},
+    {"n": 5, "dimension": "career Grand Slam order", "archetype": "first", "answer_set": "career Grand Slam winners", "q": "Who was the very first golfer to win all four majors over his career?", "answer": "Gene Sarazen", "note": "Sealed it at the 1935 Masters (age 33), the same week as his famous albatross at the 15th. Bounded set of six."},
+    {"n": 6, "dimension": "equipment rules", "archetype": "count", "answer_set": "a count", "q": "How many clubs is a player allowed to carry in the bag during a round?", "answer": "14", "note": "The Rules of Golf cap it at 14. Answer set: a small number."},
+    {"n": 7, "dimension": "scoring terms", "archetype": "term", "answer_set": "scoring terms", "q": "A birdie is one under par on a hole and an eagle is two under. What do you call three under on a single hole?", "answer": "Albatross (double eagle)", "note": "Three under; rarer still is the condor (four under). Bird-themed scoring ladder. The stem gives the pattern, not the answer."},
+    {"n": 8, "dimension": "team competition", "archetype": "opponent", "answer_set": "continents/teams", "q": "In the Ryder Cup, a team from the United States faces a team representing which continent?", "answer": "Europe", "note": "Since 1979 (before that it was Great Britain & Ireland). Answer set: continents."},
+    {"n": 9, "dimension": "origin", "archetype": "birthplace", "answer_set": "countries", "q": "In which country was the modern game of golf invented, centuries ago?", "answer": "Scotland", "note": "Home of St Andrews; the game took shape there by the 1400s-1500s. Answer set: countries."}
+  ]
+}

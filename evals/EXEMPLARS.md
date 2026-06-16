@@ -58,3 +58,13 @@ Each entry notes the *rule* it teaches so the pattern transfers off-topic.
 - **Anti — the spec-sheet trap (the big one).** Rated "everything seems like a physical property… need more diversity in the dimensions." *Rule:* twelve different *properties* (density, thermal, conductivity, magnetism, reactivity) are still one *category*. Topics with a stat table (elements, planets, cars) seduce you into mining only it; force orthogonal categories — discovery history, etymology, human use, biology, culture.
 - **Anti — iconic-use hint.** "lighter-than-air gas used to fill *floating balloons*" → Helium, rated "balloon gas feels like a hint hiding in the question." *Rule:* don't name the answer's most famous use/nickname; describe a property the solver must test.
 - **Anti — per-topic warhorses.** Mercury-is-the-liquid-metal ("obvious"), nitrogen-is-most-of-air ("common"), diamond-is-hardest ("common"). *Rule:* every topic has its own chestnuts; the freshness rule is topic-relative.
+
+## Batch 5 (elements, "category-diverse" redo) — the overcorrection
+
+The fix for the spec-sheet trap overshot into pure recall. Almost everything off-property was rejected as "memorized."
+
+- **Anti — recall masquerading as diversity.** "Discovered in the Sun" (rated "memorized event"), "Curie named it for Poland" ("memorized fact"), "named after a goblin" (recall, "but goblins are fun"), "mad as a hatter" ("not a ranking"). *Rule:* category diversity must stay inside the ranking mechanic. An off-register dimension still has to be a superlative with a reasoning path, or it's a flashcard.
+- **The fix (gold pattern)** — identity → ranking. User on the blood question: "could be good if it was more like 'most abundant metal in your blood'." *Rule:* "which metal is in X?" (recall) → "which metal is *most abundant* in X?" (rankable bet). Same trick rescues many recall stems; some categories (naming, etymology, one-off events) can't be rescued — cut them.
+- **Anti — open-ended time filter.** "Once prized above gold" → "arbitrary filter, endless time dimension." *Rule:* "ever, at any point" is unbounded; anchor to now or a named era.
+- **Anti — gerrymander, again.** Excluding francium to make caesium "the most reactive" → "you arbitrarily decided francium wasn't abundant enough." *Rule:* don't fence out the honest leader; change the dimension.
+- **Process note.** Asserted "silver is the best conductor" twice without verifying (true: 100% vs Cu 97%, Au 70% IACS). *Rule:* verify even the facts you're confident of — the user will catch an unchecked claim.

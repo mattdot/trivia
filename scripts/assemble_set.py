@@ -19,16 +19,19 @@ def main(cfgpath):
     cfg = json.load(open(cfgpath))
     sid, topic = cfg["set_id"], cfg["topic"]
     cap = cfg.get("answer_cap", 2)
+    dim_cap = cfg.get("dim_cap")  # max questions per normalized dimension (None = no limit)
     maxn = cfg.get("max", 9999)
     drop = {norm(a) for a in cfg.get("drop_answers", [])}
-    acount, seenq, qs = {}, set(), []
+    acount, dcount, seenq, qs = {}, {}, set(), []
     for src in cfg["sources"]:
         for q in json.load(open(src)):
             ans = (q.get("answer") or q.get("answer_subject") or q.get("state") or "").strip()
-            ka, kq = norm(ans), norm(q.get("q"))
+            ka, kq, kd = norm(ans), norm(q.get("q")), norm(q.get("dimension"))
             if not ans or ka in drop or kq in seenq: continue
             if acount.get(ka, 0) >= cap: continue
+            if dim_cap and dcount.get(kd, 0) >= dim_cap: continue
             acount[ka] = acount.get(ka, 0) + 1
+            dcount[kd] = dcount.get(kd, 0) + 1
             seenq.add(kq)
             qs.append((q, ans))
             if len(qs) >= maxn: break
